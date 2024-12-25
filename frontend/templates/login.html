@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../static/form.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="../static/photos/Nike.png" alt="Nike Logo">
+            <img src="../static/photos/air jordan.png" alt="Air Jordan Logo">
+        </div>
+        <h1>Login into your account:</h1>
+        <form method="POST">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                <label for="email">Email:</label>
+                {{ form.email(class_="form-control", id="email", placeholder="example@email.com") }}
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                {{ form.password(class_="form-control", id="password", placeholder="Enter your password") }}
+                {% if error %}
+                    <div class="error-text">
+                        {{ error }}
+                    </div>
+                {% endif %}
+            </div>
+            <button type="submit" class="btn">{{ form.submit.text }}</button>
+        </form>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="/auth/google" class="btn google-btn">Register with Google</a>
+        </div>
+    </div>
+</body>
+</html>

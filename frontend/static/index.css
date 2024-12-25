@@ -1,0 +1,389 @@
+@font-face {
+    font-family: "Nats-Regular";
+    src: url("../static/fonts/nats/NATS-Regular.ttf");
+}
+@font-face {
+    font-family: "Alexandria-ExtraBold";
+    src: url("../static/fonts/Alexandria/static/Alexandria-ExtraBold.ttf");
+}
+@font-face {
+    font-family: "AlfaSlabOne-Regular";
+    src: url("../static/fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf");
+}
+@font-face {
+    font-family: "Alexandria-Black";
+    src: url("../static/fonts/Alexandria/static/Alexandria-Black.ttf");
+}
+@font-face {
+    font-family: "Alexandria-Bold";
+    src: url("../static/fonts/Alexandria/static/Alexandria-Bold.ttf");
+}
+@font-face {
+    font-family: "Inter";
+    src: url("../static/fonts/Inter/static/Inter_18pt-BlackItalic.ttf");
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.frame-9,
+.frame-9 * {
+box-sizing: border-box;
+}
+.frame-9 {
+background: #ffffff;
+height: 5666px;
+position: relative;
+overflow: hidden;
+}
+.rectangle-3 {
+width: 1920px;
+height: 91px;
+position: absolute;
+left: -6px;
+top: 6px;
+overflow: visible;
+}
+.new {
+color: #000000;
+text-align: center;
+font-family: "Nats-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+position: absolute;
+left: 707px;
+top: 120px;
+width: 81px;
+height: 64px;
+}
+.men {
+color: #000000;
+text-align: center;
+font-family: "Nats-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+position: absolute;
+left: 793px;
+top: 120px;
+width: 63px;
+height: 64px;
+}
+.women {
+color: #000000;
+text-align: center;
+font-family: "Nats-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+position: absolute;
+left: 851px;
+top: 120px;
+width: 120px;
+height: 64px;
+}
+.sale {
+color: #000000;
+text-align: center;
+font-family: "Nats-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+position: absolute;
+left: 1138px;
+top: 120px;
+width: 64px;
+height: 62px;
+}
+.jordan {
+color: #000000;
+text-align: center;
+font-family: "Nats-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+position: absolute;
+left: 1033px;
+top: 120px;
+width: 105px;
+height: 64px;
+}
+.kids {
+color: #000000;
+text-align: center;
+font-family: "Nats-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+position: absolute;
+left: 966px;
+top: 120px;
+width: 67px;
+height: 64px;
+}
+.help {
+color: #000000;
+text-align: center;
+font-family: "Nats-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+position: absolute;
+left: 1645px;
+top: 25px;
+width: 107px;
+height: 72px;
+}
+.join-us {
+color: #000000;
+text-align: center;
+font-family: "Nats-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+position: absolute;
+left: 1798px;
+top: 25px;
+width: 105px;
+}
+.sign-in {
+color: #000000;
+text-align: center;
+font-family: "Nats-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+position: absolute;
+left: 1723px;
+top: 25px;
+width: 97px;
+cursor: pointer;
+}
+.group-8 {
+position: absolute;
+inset: 0;
+}
+.rectangle-2 {
+background: #f0f0f0;
+border-radius: 300px;
+width: 201px;
+height: 38px;
+position: absolute;
+left: 1653px;
+top: 123px;
+}
+.search {
+width: 24px;
+height: 24px;
+position: absolute;
+left: 1664px;
+top: 131px;
+object-fit: cover;
+}
+.search2 {
+color: #a0a0a0;
+text-align: center;
+font-family: "Nats-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+position: absolute;
+left: 1667px;
+top: 116px;
+width: 113px;
+height: 60px;
+}
+.image-23 {
+border-radius: 53px;
+width: 1307px;
+height: 708px;
+position: absolute;
+left: 313px;
+top: 207px;
+object-fit: cover;
+}
+.nike-sb-dunk-travis-scott {
+color: #000000;
+text-align: center;
+font-family: "-", sans-serif;
+font-size: 32px;
+font-weight: 400;
+position: absolute;
+left: 696px;
+top: 947px;
+width: 541px;
+height: 83px;
+}
+.nike-sb-dunk-travis-scott-span {
+color: #000000;
+font-family: "Nats-Regular", sans-serif;
+font-size: 32px;
+font-weight: 400;
+}
+.nike-sb-dunk-travis-scott-span2 {
+color: #000000;
+font-family: "Alexandria-ExtraBold", sans-serif;
+font-size: 32px;
+font-weight: 800;
+}
+.nike-sb-dunk-travis-scott-span3 {
+color: #000000;
+font-family: "Nats-Regular", sans-serif;
+font-size: 32px;
+font-weight: 400;
+}
+.just-in {
+color: #000000;
+text-align: center;
+font-family: "Nats-Regular", sans-serif;
+font-size: 40px;
+font-weight: 400;
+position: absolute;
+left: 873px;
+top: 3431px;
+width: 181px;
+height: 68px;
+}
+.form-meets-functions-with-the-weatherized-vomero-roam-an-all-season-staple-that-delivers-a-comfortable-stride-and-keeps-you-ready-for-whatever-no-matter-the-weather {
+color: #000000;
+text-align: center;
+font-family: "Nats-Regular", sans-serif;
+font-size: 40px;
+font-weight: 400;
+position: absolute;
+left: 126px;
+top: 3722px;
+width: 1668px;
+height: 192px;
+}
+.legend-never-get-old {
+color: #000000;
+text-align: center;
+font-family: "AlfaSlabOne-Regular", sans-serif;
+font-size: 96px;
+font-weight: 400;
+position: absolute;
+left: 713px;
+top: 1062px;
+width: 506px;
+height: 392px;
+}
+.the-stories-are-true-the-icon-gets-its-first-release-in-a-decade {
+color: #000000;
+text-align: center;
+font-family: "Alexandria-Bold", sans-serif;
+font-size: 36px;
+font-weight: 700;
+position: absolute;
+left: 194px;
+top: 3164px;
+width: 1548px;
+height: 94px;
+}
+.vomero-roam {
+color: #000000;
+text-align: center;
+font-family: "Alexandria-Black", sans-serif;
+font-size: 80px;
+font-weight: 900;
+position: absolute;
+left: 560px;
+top: 3553px;
+width: 801px;
+height: 115px;
+}
+.shop-by-classics {
+color: #000000;
+text-align: center;
+font-family: "Nats-Regular", sans-serif;
+font-size: 40px;
+font-weight: 400;
+position: absolute;
+left: 37px;
+top: 4984px;
+width: 322px;
+height: 74px;
+}
+.rectangle-10 {
+background: #000000;
+width: 284px;
+height: 409px;
+position: absolute;
+left: 90px;
+top: 5130px;
+}
+.image-15 {
+width: 297.43px;
+height: 297.41px;
+position: absolute;
+left: -23px;
+top: 5214px;
+transform-origin: 0 0;
+transform: rotate(-35.835deg) scale(1.074, 0.92);
+object-fit: cover;
+}
+.blazer {
+color: #ffffff;
+text-align: left;
+font-family: "Nats-Regular", sans-serif;
+font-size: 36px;
+font-weight: 400;
+position: absolute;
+left: 191px;
+top: 5434px;
+width: 82px;
+height: 51px;
+}
+.dota-fortnite {
+color: #000000;
+text-align: left;
+font-family: "Inter", sans-serif;
+font-size: 32px;
+font-weight: 900;
+font-style: italic;
+position: absolute;
+left: 839px;
+top: 35px;
+width: 242px;
+height: 53px;
+}
+.unsplash-6-ha-ngmw-vn-mc {
+width: 968px;
+height: 609px;
+position: absolute;
+left: -3px;
+top: 1727px;
+object-fit: cover;
+}
+.unsplash-ebx-bl-iiey-6-g {
+width: 955px;
+height: 609px;
+position: absolute;
+left: 965px;
+top: 1727px;
+object-fit: cover;
+}
+.unsplash-nifvl-r-h-rog {
+width: 968px;
+height: 608px;
+position: absolute;
+left: -3px;
+top: 2336px;
+object-fit: cover;
+}
+.unsplash-g-sw-m-qz-hue-xk {
+width: 955px;
+height: 608px;
+position: absolute;
+left: 965px;
+top: 2336px;
+object-fit: cover;
+}
+.rectangle-12 {
+background: #000000;
+width: 1548px;
+height: 3px;
+position: absolute;
+left: 194px;
+top: 3081px;
+}
+.rectangle-13 {
+background: #000000;
+width: 1548px;
+height: 3px;
+position: absolute;
+left: 189px;
+top: 3289px;
+}
