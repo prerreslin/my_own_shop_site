@@ -7,7 +7,7 @@ from fastapi import HTTPException,UploadFile, Form
 from typing import Annotated
 import os
 import shutil
-from sqlalchemy import func
+from sqlalchemy import func, or_
 
 UPLOAD_FOLDER = './frontend/static/photos/uploads'
 
@@ -54,7 +54,7 @@ def add_new_clothing(data:Annotated[ShopModel, Form(media_type="multipart/form-d
             shop.variable=data.variable.filename
             variable_path = os.path.join(upload_path, data.variable.filename)
             with open(variable_path, "wb") as buffer:
-                shutil.copyfileobj(data.variable, buffer)
+                shutil.copyfileobj(data.variable.file, buffer)
 
         photos = []
 
@@ -182,7 +182,7 @@ def get_all_clothing_by_type(type_of:str):
 @api_router.get("/shop/get_all_clothing_by_gender")
 def get_all_clothing_by_type(gender:str):
     with Session() as session:
-        shop = session.query(Shop).where(Shop.gender == gender).all()
+        shop = session.query(Shop).where(or_(Shop.gender == gender, Shop.gender == "Men's / Woman's")).all()
         if not shop:
             raise HTTPException(404,"Clothing not found") 
         return shop
