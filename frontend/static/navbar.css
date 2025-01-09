@@ -1,45 +1,45 @@
 @font-face {
-    font-family: "Nats-Regular";
-    src: url("../static/fonts/nats/NATS-Regular.ttf");
+font-family: "Nats-Regular";
+src: url("../static/fonts/nats/NATS-Regular.ttf");
 }
 @font-face {
-    font-family: "Alexandria-ExtraBold";
-    src: url("../static/fonts/Alexandria/static/Alexandria-ExtraBold.ttf");
+font-family: "Alexandria-ExtraBold";
+src: url("../static/fonts/Alexandria/static/Alexandria-ExtraBold.ttf");
 }
 @font-face {
-    font-family: "AlfaSlabOne-Regular";
-    src: url("../static/fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf");
+font-family: "AlfaSlabOne-Regular";
+src: url("../static/fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf");
 }
 @font-face {
-    font-family: "Alexandria-Black";
-    src: url("../static/fonts/Alexandria/static/Alexandria-Black.ttf");
+font-family: "Alexandria-Black";
+src: url("../static/fonts/Alexandria/static/Alexandria-Black.ttf");
 }
 @font-face {
-    font-family: "Alexandria-Bold";
-    src: url("../static/fonts/Alexandria/static/Alexandria-Bold.ttf");
+font-family: "Alexandria-Bold";
+src: url("../static/fonts/Alexandria/static/Alexandria-Bold.ttf");
 }
 @font-face {
-    font-family: "Inter";
-    src: url("../static/fonts/Inter/static/Inter_18pt-BlackItalic.ttf");
+font-family: "Inter";
+src: url("../static/fonts/Inter/static/Inter_18pt-BlackItalic.ttf");
 }
 @font-face {
-    font-family: "Alkalami-Regular";
-    src: url("../static/fonts/Alkalami/Alkalami-Regular.ttf");
+font-family: "Alkalami-Regular";
+src: url("../static/fonts/Alkalami/Alkalami-Regular.ttf");
 }
 @font-face {
-    font-family: "ArchivoNarrow-Medium";
-    src: url("../static/fonts/Archivo_Narrow/static/ArchivoNarrow-Medium.ttf");
+font-family: "ArchivoNarrow-Medium";
+src: url("../static/fonts/Archivo_Narrow/static/ArchivoNarrow-Medium.ttf");
 }
 @font-face {
-    font-family: "Alexandria-Regular";
-    src: url("../static/fonts/Alexandria/static/Alexandria-Regular.ttf");
+font-family: "Alexandria-Regular";
+src: url("../static/fonts/Alexandria/static/Alexandria-Regular.ttf");
 }
-  
+
 body {
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
-    background-color: gray;
+width: 100vw;
+height: 100vh;
+overflow-x: hidden;
+background-color: gray;
 }
 .rectangle-3 {
 width: 1920px;
@@ -48,6 +48,7 @@ position: absolute;
 left: -6px;
 top: 6px;
 overflow: visible;
+z-index: 100;
 }
 .new {
 color: #000000;
@@ -61,6 +62,7 @@ top: 15px;
 width: 81px;
 height: 64px;
 cursor: pointer;
+z-index: 100;
 }
 .men {
 color: #000000;
@@ -73,6 +75,7 @@ left: 799px;
 top: 15px;
 width: 63px;
 height: 64px;
+z-index: 100;
 }
 .women {
 color: #000000;
@@ -85,6 +88,7 @@ left: 857px;
 top: 15px;
 width: 120px;
 height: 64px;
+z-index: 100;
 }
 .sale {
 color: #000000;
@@ -97,6 +101,7 @@ left: 1144px;
 top: 15px;
 width: 64px;
 height: 62px;
+z-index: 100;
 }
 .jordan {
 color: #000000;
@@ -109,6 +114,7 @@ left: 1039px;
 top: 15px;
 width: 105px;
 height: 64px;
+z-index: 100;
 }
 .kids {
 color: #000000;
@@ -121,14 +127,16 @@ left: 972px;
 top: 15px;
 width: 67px;
 height: 64px;
+z-index: 100;
 }
 .nike {
-    width: 79px;
-    height: 79px;
-    position: absolute;
-    left: 50px;
-    top: 0px;
-    object-fit: cover;
+width: 79px;
+height: 79px;
+position: absolute;
+left: 50px;
+top: 0px;
+object-fit: cover;
+z-index: 100;
 }
 .help {
 color: #000000;
@@ -136,6 +144,7 @@ text-align: center;
 font-family: "Nats-Regular", sans-serif;
 font-size: 24px;
 font-weight: 400;
+z-index: 100;
 }
 .join-us {
 color: #000000;
@@ -143,6 +152,7 @@ text-align: center;
 font-family: "Nats-Regular", sans-serif;
 font-size: 24px;
 font-weight: 400;
+z-index: 100;
 }
 .sign-in {
 color: #000000;
@@ -151,24 +161,28 @@ font-family: "Nats-Regular", sans-serif;
 font-size: 24px;
 font-weight: 400;
 cursor: pointer;
+z-index: 100;
 }
 .user-info {
-    color: #000000;
-    text-align: center;
-    font-family: "Nats-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    cursor: pointer;
+color: #000000;
+text-align: center;
+font-family: "Nats-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+cursor: pointer;
+z-index: 100;
 }
 .group-8 {
 position: absolute;
 inset: 0;
+z-index: 100;
 }
 .nav-down {
-    width: 100%;
-    height: 100px;
-    top: 110px;
-    position: absolute;
+width: 100%;
+height: 100px;
+top: 110px;
+position: absolute;
+z-index: 100;
 }
 .rectangle-2 {
 background: #f0f0f0;
@@ -176,16 +190,18 @@ border-radius: 300px;
 width: 201px;
 height: 38px;
 position: absolute;
-left: 1653px;
+left: 1590px;
 top: 123px;
+z-index: 100;
 }
 .search {
 width: 24px;
 height: 24px;
 position: absolute;
-left: 1664px;
+left: 1600px;
 top: 131px;
 object-fit: cover;
+z-index: 100;
 }
 .search2 {
 color: #a0a0a0;
@@ -194,35 +210,87 @@ font-family: "Nats-Regular", sans-serif;
 font-size: 24px;
 font-weight: 400;
 position: absolute;
-left: 1667px;
+left: 1600px;
 top: 125px;
 width: 113px;
 height: 60px;
+z-index: 100;
 }
 .dota-fortnite {
-    color: #000000;
-    text-align: center;
-    font-family: "Inter", sans-serif;
-    font-size: 32px;
-    font-weight: 900;
-    font-style: italic;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 242px;
-    height: 53px;
-    cursor: pointer;
+color: #000000;
+text-align: center;
+font-family: "Inter", sans-serif;
+font-size: 32px;
+font-weight: 900;
+font-style: italic;
+position: absolute;
+top: 60%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 242px;
+height: 53px;
+cursor: pointer;
+z-index: 100;
 }
 .navbar {
-    position: fixed;
-    margin-top: 25px;
-    background-color: transparent;
+position: fixed;
+margin-top: 25px;
+background-color: transparent;
+z-index: 100;
 }
+
 .nav-item {
-    display: flex;
-    align-items: flex-end;
+display: flex;
+align-items: flex-end;
+z-index: 100;
 }
 .custom-navbar {
-    margin-right: 25px;
+margin-right: 25px;
+z-index: 100;
+}
+.heart {
+width: 26px;
+height: 20px;
+position: absolute;
+left: 1817px;
+top: 131px;
+object-fit: cover;
+z-index: 100;
+}
+.bag {
+width: 26px;
+height: 20px;
+position: absolute;
+left: 1850px;
+top: 131px;
+object-fit: cover;
+z-index: 100;
+}
+.dropdown-menu {
+    position: relative;
+    top: 0ц;
+    left: 85%;
+    background-color: #f1f1f1;
+    width: 100px;
+    height: 40px;
+    z-index: 1100;
+    margin-top: 3px; 
+    display: none;
+}
+
+.user-info.active + .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    color: black;
+    text-decoration: none;
+    font-family: "Nats-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    z-index: 1100;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
 }

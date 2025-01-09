@@ -1,43 +1,71 @@
-<link rel="stylesheet" href="../static/navbar.css">
-<img class="rectangle-3" src="../static/photos/Rectangle 3.svg" />
-<nav class="navbar navbar-expand-lg navbar-transparent">
-    <ul class="navbar-nav d-flex justify-content-end w-100 custom-navbar">
-    <li class="nav-item">
-        <div onclick="window.location.href='{{ url_for('index') }}';" class="dota-fortnite">DotaFortnite</div>
-    </li>
-    {% if user %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/navbar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <img class="rectangle-3" src="../static/photos/Rectangle 3.svg" />
+    <div class="dropdown-menu">
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-transparent">
+        <ul class="navbar-nav d-flex justify-content-end w-100 custom-navbar">
         <li class="nav-item">
-        <div class="user-info">|&nbsp;{{ user.username }}&nbsp;</div>
+            <div onclick="window.location.href='{{ url_for('index') }}';" class="dota-fortnite">Velociti</div>
         </li>
-    {% endif %}
-    <li class="nav-item">
-        <div class="help">|&nbsp;Help&nbsp;|</div>
-    </li>
-    <li class="nav-item">
-        <div class="join-us">&nbsp;Join Us&nbsp;|</div>
-    </li>
-    {% if not user %}
-    <li class="nav-item">
-        <div class="sign-in">
-        <a href="/email" style="text-decoration: none; color: inherit;">&nbsp;Sign In&nbsp;|</a>
-        </div>
-    </li>
-    {% endif %}
-    </ul>
-</nav>
-<div class="nav-down">
-    <div onclick="window.location.href='{{ url_for('cloth_type') }}?type=New&clothing=All';" class="new">New</div>
-    <img class="nike" src="../static/photos/Nike.png" />
-    <div class="men">Men</div>
-    <div class="women">Women</div>
-    <div class="sale">Sale</div>
-    <div class="jordan">Jordan</div>
-    <div class="kids">Kids</div>
-</div>
-<img class="heart" src="../static/photos/Heart.png" />
-<img class="bag" src="Bag.png" />
-<div class="rectangle-2"></div>
-<img class="search" src="../static/photos/Search.png" />
-<div class="search2">Search</div>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>   
+        {% if user %}
+        <div class="user-info" onclick="toggleDropdown()">|&nbsp;{{ user.username }}&nbsp;</div>
+        {% endif %}
+        <li class="nav-item">
+            <div class="help">|&nbsp;Help&nbsp;|</div>
+        </li>
+        <li class="nav-item">
+            <div class="join-us">&nbsp;Join Us&nbsp;|</div>
+        </li>
+        {% if not user %}
+        <li class="nav-item">
+            <div class="sign-in">
+            <a href="/email" style="text-decoration: none; color: inherit;">&nbsp;Sign In&nbsp;|</a>
+            </div>
+        </li>
+        {% endif %}
+        </ul>
+    </nav>
+    <div class="nav-down">
+        <div onclick="window.location.href='{{ url_for('cloth_type') }}?type=New&clothing=All';" class="new">New</div>
+        <img class="nike" src="../static/photos/Nike.png" />
+        <div onclick="window.location.href='{{ url_for('cloth_type') }}?type=Men&amp;s&clothing=All';" class="men">Men</div>
+        <div onclick="window.location.href='{{ url_for('cloth_type') }}?type=Woman&amp;s&clothing=All';" class="women">Women</div>
+        <div class="sale">Sale</div>
+        <div class="jordan">Jordan</div>
+        <div class="kids">Kids</div>
+    </div>
+    <img class="heart" src="../static/photos/Heart.png" />
+    <img class="bag" src="../static/photos/Bag.png" />
+    <div class="rectangle-2"></div>
+    <img class="search" src="../static/photos/Search.png" />
+    <div class="search2">Search</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function toggleDropdown() {
+            var userInfo = document.querySelector('.user-info');
+            userInfo.classList.toggle('active');
+        }
+
+        document.addEventListener('click', function(event) {
+            var dropdown = document.querySelector('.dropdown-menu');
+            var userInfo = document.querySelector('.user-info');
+            if (!userInfo.contains(event.target)) {
+                dropdown.style.display = 'none';
+                dropdown.style.width = '100px';
+                userInfo.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -25,8 +25,9 @@ def add_new_clothing(data:Annotated[ShopModel, Form(media_type="multipart/form-d
             price=data.price,
             sizes = data.sizes,
             photo=data.photo.filename,
-            photo_hover=data.photo_hover.filename,
-            variable=data.variable.filename,
+            description=data.description,
+            styles=data.styles,
+            model=data.model,
             created_at=data.created_at
         )
         last_id = session.query(func.max(Shop.id)).scalar()
@@ -42,12 +43,15 @@ def add_new_clothing(data:Annotated[ShopModel, Form(media_type="multipart/form-d
         with open(photo_path, "wb") as buffer:
             shutil.copyfileobj(data.photo.file, buffer)
 
-        photo_hover_path = os.path.join(upload_path, data.photo_hover.filename)
+        if data.photo_hover:
+            shop.photo_hover=data.photo_hover.filename
+            photo_hover_path = os.path.join(upload_path, data.photo_hover.filename)
 
-        with open(photo_hover_path, "wb") as buffer:
-            shutil.copyfileobj(data.photo_hover.file, buffer)
-
+            with open(photo_hover_path, "wb") as buffer:
+                shutil.copyfileobj(data.photo_hover.file, buffer)
+                
         if data.variable:
+            shop.variable=data.variable.filename
             variable_path = os.path.join(upload_path, data.variable.filename)
             with open(variable_path, "wb") as buffer:
                 shutil.copyfileobj(data.variable, buffer)
@@ -112,6 +116,9 @@ def change_clothing(id,data:Annotated[ShopModel, Form(media_type="multipart/form
         shop.name_of_clothes = data.name_of_clothes
         shop.discount = data.discount
         shop.sizes = data.sizes
+        shop.description = data.description
+        shop.styles = data.styles
+        shop.model = data.model
         
         path = os.path.join(UPLOAD_FOLDER,str(shop.id))
         for item in os.listdir(path):
@@ -124,7 +131,7 @@ def change_clothing(id,data:Annotated[ShopModel, Form(media_type="multipart/form
             except Exception as e:
                 print(f"Cannot delete {item_path}. Error: {e}")
 
-        if shop.photo:
+        if data.photo:
             photo_filename = data.photo.filename
 
             with open(path, "wb") as buffer:
@@ -132,7 +139,7 @@ def change_clothing(id,data:Annotated[ShopModel, Form(media_type="multipart/form
 
             shop.photo = photo_filename
             
-        if shop.photo_hover:
+        if data.photo_hover:
             photo_hover_filename = data.photo_hover.filename
 
             with open(path, "wb") as buffer:
@@ -140,7 +147,15 @@ def change_clothing(id,data:Annotated[ShopModel, Form(media_type="multipart/form
 
             shop.photo_hover = photo_hover_filename
         
-        if shop.photos:
+        if data.variable:
+            variable_filename = data.variable.filename
+
+            with open(path, "wb") as buffer:
+                shutil.copyfileobj(data.variable.file, buffer)
+
+            shop.photo_hover = variable_filename
+
+        if data.add_photos:
             photos = []
             for i in data.add_photos:
                 photo_filename = i.filename
@@ -159,6 +174,15 @@ def change_clothing(id,data:Annotated[ShopModel, Form(media_type="multipart/form
 def get_all_clothing_by_type(type_of:str):
     with Session() as session:
         shop = session.query(Shop).where(Shop.name_of_clothes == type_of).all()
+        if not shop:
+            raise HTTPException(404,"Clothing not found") 
+        return shop
+    
+
+@api_router.get("/shop/get_all_clothing_by_gender")
+def get_all_clothing_by_type(gender:str):
+    with Session() as session:
+        shop = session.query(Shop).where(Shop.gender == gender).all()
         if not shop:
             raise HTTPException(404,"Clothing not found") 
         return shop

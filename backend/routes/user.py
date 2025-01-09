@@ -39,8 +39,6 @@ def login(data:LoginModel):
 def get_user_by_email(email:str):
     with Session() as session:
         user = session.query(User).where(User.email == email).first()
-        print(user)
-        print(not user)
         if not user:
             return {"status":"register"}
         return {"status":"login"}

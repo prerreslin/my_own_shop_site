@@ -11,36 +11,38 @@
     <div class="frame-22">
       <div class="rectangle-16"></div>
       <div class="rectangle-34"></div>
-      <div class="rectangle-29"></div>
-      <div class="rectangle-30"></div>
-      
-      <div class="nike-dunk-low-retro">Nike Dunk Low Retro</div>
-      <div class="men-s-shoes">Men’s Shoes</div>
-      <div class="_115">$115</div>
-      <img class="image-37" src="image-370.png" />
+      <div class="name">{{ clothing.name }}</div>
+      <div class="gender">{{ clothing.gender }} {{ clothing.type_of_clothes }}</div>
+      <div class="price">${{ clothing.price }}</div>
+      {% if clothing.variable %}
+        <img class="image-37" src="../static/photos/uploads/{{ clothing.id }}/{{ clothing.variable }}" />
+      {% endif %}
       <div class="select-size">Select Size</div>
       <div class="rectangle-32"></div>
       <div class="rectangle-33"></div>
       <div class="add-to-bag">Add to Bag</div>
       <div class="favorite">Favorite</div>
-      <img class="heart" src="../static/photos/Heart.png" />
-      <div class="created-for-the-hardwood-but-taken-to-the-streets-the-nike-dunk-low-retro-returns-with-crisp-overlays-and-original-team-colors-this-basketball-icon-channels-80-s-vibes-with-premium-leather-in-the-upper-that-looks-good-and-breaks-in-even-better-modern-footwear-technology-helps-bring-the-comfort-into-the-21st-century">
-        Created for the hardwood but taken to the streets, the Nike Dunk Low Retro
-        returns with crisp overlays and original team colors. This basketball icon
-        channels &#039;80s vibes with premium leather in the upper that looks good
-        and breaks in even better. Modern footwear technology helps bring the
-        comfort into the 21st century.
-      </div>
-      <div class="shown-white-white-black">
-        <ul class="shown-white-white-black-span">
-          <li>Shown: White/White/Black</li>
+      <div class="description">{{ clothing.description }}</div>
+      {% if clothing.styles %}
+        <div class="style">
+          <ul class="style-span">
+            <li>{{ clothing.styles }}</li>
+          </ul>
+        </div>
+        {% if clothing.model %}
+          <div class="model">
+            <ul class="model-span">
+              <li>{{ clothing.model }}</li>
+            </ul>
+          </div>
+        {% endif %}
+      {% elif clothing.model %}
+      <div class="model">
+        <ul class="model-span">
+          <li>{{ clothing.model }}</li>
         </ul>
       </div>
-      <div class="style-dd-1391-100">
-        <ul class="style-dd-1391-100-span">
-          <li>Style: DD1391-100</li>
-        </ul>
-      </div>
+      {% endif %}
       <div class="resources-gift-cards-find-a-store-membership-nike-journal-site-feedback">
         <span>
           <span class="resources-gift-cards-find-a-store-membership-nike-journal-site-feedback-span">

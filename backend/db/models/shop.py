@@ -8,6 +8,9 @@ class Shop(Base):
 
     id:Mapped[int] = mapped_column(primary_key=True,autoincrement=True)
     name:Mapped[str] = mapped_column(nullable=False)
+    description:Mapped[str] = mapped_column(nullable=True)
+    styles:Mapped[str] = mapped_column(nullable=True)
+    model:Mapped[str] = mapped_column(nullable=True)
     type_of_clothes:Mapped[str] = mapped_column(nullable=False)
     name_of_clothes:Mapped[str] = mapped_column(nullable=False)
     discount:Mapped[str] = mapped_column(nullable=True)

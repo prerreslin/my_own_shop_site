@@ -26,6 +26,7 @@
 .frame-22 {
   background: #ffffff;
   height: 2437px;
+  top: 0px;
   position: relative;
   overflow: hidden;
 }
@@ -65,86 +66,47 @@
   left: 1288px;
   top: 455px;
 }
-.image-29 {
-  border-radius: 11px;
-  width: 75px;
-  height: 76px;
-  position: absolute;
-  left: 234px;
-  top: 360px;
-  object-fit: cover;
-}
-.image-31 {
-  border-radius: 11px;
-  width: 75px;
-  height: 76px;
-  position: absolute;
-  left: 234px;
-  top: 546px;
-  object-fit: cover;
-}
-.image-33 {
-  border-radius: 11px;
-  width: 75px;
-  height: 76px;
-  position: absolute;
-  left: 234px;
-  top: 728px;
-  object-fit: cover;
-}
-.image-35 {
-  border-radius: 11px;
-  width: 75px;
-  height: 76px;
-  position: absolute;
-  left: 234px;
-  top: 914px;
-  object-fit: cover;
-}
-.image-36 {
-  border-radius: 11px;
-  width: 75px;
-  height: 76px;
-  position: absolute;
-  left: 234px;
-  top: 1007px;
-  object-fit: cover;
-}
-.nike-dunk-low-retro {
+.name {
   color: #000000;
   text-align: center;
   font-family: "ABeeZee-Regular", sans-serif;
-  font-size: 29px;
+  font-size: clamp(10px, 5vw, 29px);
   font-weight: 400;
   position: absolute;
   left: 1199px;
   top: 267px;
-  width: 287px;
+  width: 35%;
   height: 35px;
+  text-align: left;
+  line-height: 1;
 }
-.men-s-shoes {
+.gender {
   color: #808080;
   text-align: center;
   font-family: "Alexandria-Regular", sans-serif;
-  font-size: 20px;
+  font-size: clamp(10px, 5vw, 20px);
   font-weight: 400;
   position: absolute;
   left: 1201px;
   top: 311px;
-  width: 124px;
+  width: 35%;
   height: 33px;
+  text-align: left;
+  line-height: 1;
 }
-._115 {
+.price {
   color: #000000;
   text-align: center;
   font-family: "Alexandria-Regular", sans-serif;
-  font-size: 24px;
+  font-size: clamp(10px, 5vw, 24px);
   font-weight: 400;
   position: absolute;
   left: 1201px;
   top: 361px;
-  width: 60px;
+  width: 35%;
   height: 27px;
+  text-align: left;
+  line-height: 1;
 }
 .image-37 {
   border-radius: 11px;
@@ -154,6 +116,7 @@
   left: 1288px;
   top: 455px;
   object-fit: cover;
+  border: 1px solid #d3d3d3;
 }
 .select-size {
   color: #000000;
@@ -220,7 +183,7 @@
   top: 1443px;
   object-fit: cover;
 }
-.created-for-the-hardwood-but-taken-to-the-streets-the-nike-dunk-low-retro-returns-with-crisp-overlays-and-original-team-colors-this-basketball-icon-channels-80-s-vibes-with-premium-leather-in-the-upper-that-looks-good-and-breaks-in-even-better-modern-footwear-technology-helps-bring-the-comfort-into-the-21st-century {
+.description {
   color: #000000;
   text-align: left;
   font-family: "Abel-Regular", sans-serif;
@@ -232,7 +195,7 @@
   width: 288px;
   height: 207px;
 }
-.shown-white-white-black {
+.style {
   color: #000000;
   text-align: left;
   font-family: "Abel-Regular", sans-serif;
@@ -241,10 +204,11 @@
   position: absolute;
   left: 1201px;
   top: 1769px;
-  width: 217px;
+  width: 40%;
   height: 23px;
+  line-height: 1;
 }
-.style-dd-1391-100 {
+.model {
   color: #000000;
   text-align: left;
   font-family: "Abel-Regular", sans-serif;
@@ -253,8 +217,9 @@
   position: absolute;
   left: 1201px;
   top: 1799px;
-  width: 163px;
+  width: 40%;
   height: 23px;
+  line-height: 1;
 }
 .resources-gift-cards-find-a-store-membership-nike-journal-site-feedback {
   text-align: left;
@@ -662,33 +627,6 @@
   width: 74px;
   height: 20px;
 }
-.image-30 {
-  border-radius: 11px;
-  width: 75px;
-  height: 76px;
-  position: absolute;
-  left: 234px;
-  top: 455px;
-  object-fit: cover;
-}
-.image-34 {
-  border-radius: 11px;
-  width: 75px;
-  height: 76px;
-  position: absolute;
-  left: 234px;
-  top: 821px;
-  object-fit: cover;
-}
-.image-32 {
-  border-radius: 11px;
-  width: 75px;
-  height: 76px;
-  position: absolute;
-  left: 234px;
-  top: 635px;
-  object-fit: cover;
-}
 .image-24 {
   border-radius: 11px;
   width: 79px;
@@ -697,12 +635,16 @@
   left: 1201px;
   top: 454.95px;
   object-fit: cover;
+  border-color: gray;
+  border: 1px solid #d3d3d3;
 }
 .image-242 {
   border-radius: 11px;
   width: 75px;
   height: 76px;
   object-fit: cover;
+  border-color: gray;
+  border: 1px solid #d3d3d3;
 }
 .images-container {
   border-radius: 11px;
@@ -714,13 +656,16 @@
   object-fit: cover;
   grid-template-columns: repeat(1, 1fr);
   background-color: transparents;
+  border-color: gray;
 }
 .image-243 {
   border-radius: 20px;
   width: 812px;
-  height: 1010px;
+  height: 812px;
   position: absolute;
   left: 332px;
   top: 267px;
   object-fit: cover;
+  border-color: gray;
+  border: 1px solid #d3d3d3;
 }

@@ -20,6 +20,6 @@ class UserModel(BaseModel):
         return value
     
 
-class LoginModel(UserModel):
+class LoginModel(BaseModel):
     email: EmailStr = Field(..., description="Email of user")
     password: str = Field(..., min_length=8, description="Password of user")

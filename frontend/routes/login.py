@@ -2,9 +2,8 @@ from ..app import app, BACKEND_URL
 from ..forms import EmailForm,RegisterForm, LoginForm
 from ..db.models import User
 from flask import render_template, redirect, url_for, request
-from flask_login import login_user
+from flask_login import login_user, LoginManager, logout_user
 from requests import get, post
-from flask_login import LoginManager
 
 login_manager = LoginManager()
 login_manager.login_view = "login"
@@ -35,7 +34,7 @@ def post_email():
         response = get(f"{BACKEND_URL}/api/user/get_user_by_email?email={email}").json()
         if response.get("status") == "register":
             return redirect(url_for("register",email=email))
-        return redirect(url_for("login"),email=email)
+        return redirect(url_for("login",email=email))
     
 
 @app.get("/register")
@@ -75,22 +74,32 @@ def login():
     return render_template("login.html",form=form)
 
 
-#TODO: POST /login
+@app.post("/login")
+def post_login():
+    form = LoginForm()
 
-# @app.post("/login")
-# def post_login():
-#     form = LoginForm()
-
-#     if form.validate_on_submit():
-#         data = {
-#             "password": form.password.data,
-#             "email": form.email.data
-#         }
-#         responce = post(f"{BACKEND_URL}/api/user/login",json=data)
-#         if responce.status_code == 200:
-#             return responce.text
-#         else:
+    if form.validate_on_submit():
+        print(form.email.data, form.password.data) 
+        data = {
+            "password": form.password.data,
+            "email": form.email.data
+        }
+        response = post(f"{BACKEND_URL}/api/user/login",json=data)
+        if response.status_code == 200:
+            user_data = response.json()
+            user = User(user_data)
+            login_user(user)
+            return redirect(url_for("index"))
+        else:
+            error = response.json().get("detail", "Unknown error")[0].get("msg")
+            return render_template("login.html", form=form, error=error)
             
             
-#     else:
-#         return render_template("login.html", form=form)
+    else:
+        return render_template("login.html", form=form)
+    
+
+@app.get("/logout")
+def logout():
+    logout_user()
+    return redirect(url_for("index"))

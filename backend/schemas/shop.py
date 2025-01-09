@@ -53,9 +53,12 @@ class ShopModel(BaseModel):
     created_at: datetime = Field(default_factory=datetime.now, description="Date of the creation")
     sizes: Optional[List[SizeEnum]] = Field(None, description="Available sizes of the clothes")
     photo: Annotated[UploadFile, File(...)]
-    photo_hover: Annotated[UploadFile, File(...)] = None
-    add_photos: Optional[List[UploadFile]] = Field(..., description="List of photos")
-    variable: Annotated[UploadFile, File(...)]
+    photo_hover: Annotated[UploadFile, File(...)]
+    add_photos: List[UploadFile] = None
+    variable: Optional[Annotated[UploadFile, File(None)]] = None
+    description: Optional[str] = Field(..., max_length=350, description="Description of clothes")
+    styles: Optional[str] = Field(None)
+    model: str = None
     
     @field_validator("created_at")
     @classmethod
