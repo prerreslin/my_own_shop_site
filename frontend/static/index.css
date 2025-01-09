@@ -36,6 +36,7 @@ background: #ffffff;
 height: 5666px;
 position: relative;
 overflow: hidden;
+top: 100px;
 }
 .rectangle-3 {
 width: 1920px;
@@ -45,145 +46,9 @@ left: -6px;
 top: 6px;
 overflow: visible;
 }
-.new {
-color: #000000;
-text-align: center;
-font-family: "Nats-Regular", sans-serif;
-font-size: 24px;
-font-weight: 400;
-position: absolute;
-left: 707px;
-top: 120px;
-width: 81px;
-height: 64px;
-}
-.men {
-color: #000000;
-text-align: center;
-font-family: "Nats-Regular", sans-serif;
-font-size: 24px;
-font-weight: 400;
-position: absolute;
-left: 793px;
-top: 120px;
-width: 63px;
-height: 64px;
-}
-.women {
-color: #000000;
-text-align: center;
-font-family: "Nats-Regular", sans-serif;
-font-size: 24px;
-font-weight: 400;
-position: absolute;
-left: 851px;
-top: 120px;
-width: 120px;
-height: 64px;
-}
-.sale {
-color: #000000;
-text-align: center;
-font-family: "Nats-Regular", sans-serif;
-font-size: 24px;
-font-weight: 400;
-position: absolute;
-left: 1138px;
-top: 120px;
-width: 64px;
-height: 62px;
-}
-.jordan {
-color: #000000;
-text-align: center;
-font-family: "Nats-Regular", sans-serif;
-font-size: 24px;
-font-weight: 400;
-position: absolute;
-left: 1033px;
-top: 120px;
-width: 105px;
-height: 64px;
-}
-.kids {
-color: #000000;
-text-align: center;
-font-family: "Nats-Regular", sans-serif;
-font-size: 24px;
-font-weight: 400;
-position: absolute;
-left: 966px;
-top: 120px;
-width: 67px;
-height: 64px;
-}
-.help {
-color: #000000;
-text-align: center;
-font-family: "Nats-Regular", sans-serif;
-font-size: 24px;
-font-weight: 400;
-position: absolute;
-left: 1645px;
-top: 25px;
-width: 107px;
-height: 72px;
-}
-.join-us {
-color: #000000;
-text-align: center;
-font-family: "Nats-Regular", sans-serif;
-font-size: 24px;
-font-weight: 400;
-position: absolute;
-left: 1798px;
-top: 25px;
-width: 105px;
-}
-.sign-in {
-color: #000000;
-text-align: center;
-font-family: "Nats-Regular", sans-serif;
-font-size: 24px;
-font-weight: 400;
-position: absolute;
-left: 1723px;
-top: 25px;
-width: 97px;
-cursor: pointer;
-}
 .group-8 {
 position: absolute;
 inset: 0;
-}
-.rectangle-2 {
-background: #f0f0f0;
-border-radius: 300px;
-width: 201px;
-height: 38px;
-position: absolute;
-left: 1653px;
-top: 123px;
-}
-.search {
-width: 24px;
-height: 24px;
-position: absolute;
-left: 1664px;
-top: 131px;
-object-fit: cover;
-}
-.search2 {
-color: #a0a0a0;
-text-align: center;
-font-family: "Nats-Regular", sans-serif;
-font-size: 24px;
-font-weight: 400;
-position: absolute;
-left: 1667px;
-top: 116px;
-width: 113px;
-height: 60px;
 }
 .image-23 {
 border-radius: 53px;
@@ -326,19 +191,6 @@ top: 5434px;
 width: 82px;
 height: 51px;
 }
-.dota-fortnite {
-color: #000000;
-text-align: left;
-font-family: "Inter", sans-serif;
-font-size: 32px;
-font-weight: 900;
-font-style: italic;
-position: absolute;
-left: 839px;
-top: 35px;
-width: 242px;
-height: 53px;
-}
 .unsplash-6-ha-ngmw-vn-mc {
 width: 968px;
 height: 609px;
@@ -386,4 +238,234 @@ height: 3px;
 position: absolute;
 left: 189px;
 top: 3289px;
+}
+.navbar {
+    margin-top: 30px;
+    background-color: transparent;
+}
+.nav-item {
+    display: flex-end;
+    align-items: flex-end;
+}
+.custom-navbar {
+    margin-right: 25px;
+}
+.group-51 {
+    height: 782px;
+    top: 2100px;
+    position: relative;
+}
+.always-iconic {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Alexandria-Black", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  position: absolute;
+  left: 14px;
+  top: 0px;
+  width: 186px;
+  height: 53px;
+}
+.buy-it-first {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Alexandria-Black", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  position: absolute;
+  left: 19px;
+  top: 633px;
+  width: 177px;
+  height: 37px;
+}
+.run-in-the-dark {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Alexandria-Black", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  position: absolute;
+  left: 991px;
+  top: 0px;
+  width: 216px;
+  height: 43px;
+}
+.run-faster {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Alexandria-Black", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  position: absolute;
+  left: 994px;
+  top: 651px;
+  width: 177px;
+  height: 28px;
+}
+.nike-dunk-retro {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Alexandria-SemiBold", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  position: absolute;
+  left: 0px;
+  top: 48px;
+  width: 291px;
+  height: 53px;
+}
+.nike-air-jordan-1 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Alexandria-SemiBold", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  position: absolute;
+  left: 5px;
+  top: 670px;
+  width: 299px;
+  height: 57px;
+}
+.nike-dunk-x-travis-scott {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Alexandria-SemiBold", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  position: absolute;
+  left: 977px;
+  top: 48px;
+  width: 395px;
+  height: 48px;
+}
+.nike-air-max-plus {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Alexandria-SemiBold", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  position: absolute;
+  left: 994px;
+  top: 689px;
+  width: 294px;
+  height: 38px;
+}
+.group-18 {
+  width: 68px;
+  height: 34px;
+  position: static;
+  cursor: pointer;
+}
+.rectangle-9 {
+  background: #ffffff;
+  border-radius: 271px;
+  width: 68px;
+  height: 34px;
+  position: absolute;
+  left: 73px;
+  top: 137px;
+}
+.shop {
+  color: #000000;
+  text-align: center;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  left: 76px;
+  top: 145px;
+  width: 63px;
+  height: 19px;
+}
+.group-25 {
+  width: 68px;
+  height: 34px;
+  position: static;
+  cursor: pointer;
+}
+.rectangle-92 {
+  background: #ffffff;
+  border-radius: 271px;
+  width: 68px;
+  height: 34px;
+  position: absolute;
+  left: 73px;
+  top: 748px;
+}
+.shop2 {
+  color: #000000;
+  text-align: center;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  left: 76px;
+  top: 756px;
+  width: 63px;
+  height: 19px;
+}
+.group-24 {
+  width: 68px;
+  height: 37px;
+  position: static;
+  cursor: pointer;
+}
+.rectangle-93 {
+  background: #ffffff;
+  border-radius: 271px;
+  width: 68px;
+  height: 34px;
+  position: absolute;
+  left: 1048px;
+  top: 137px;
+}
+.shop3 {
+  color: #000000;
+  text-align: center;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  left: 1051px;
+  top: 144px;
+  width: 63px;
+  height: 30px;
+}
+.group-19 {
+  width: 68px;
+  height: 34px;
+  position: static;
+  cursor: pointer;
+}
+.unsplash-fz-92-ybo-3-n-0-m {
+  border-radius: 53px;
+  width: 1317px;
+  height: 831px;
+  position: absolute;
+  left: 302px;
+  top: 4029px;
+  object-fit: cover;
+}
+
+.rectangle-94 {
+  background: #ffffff;
+  border-radius: 271px;
+  width: 68px;
+  height: 34px;
+  position: absolute;
+  left: 1048px;
+  top: 748px;
+}
+.shop4 {
+  color: #000000;
+  text-align: center;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  left: 1051px;
+  top: 756px;
+  width: 63px;
+  height: 19px;
 }

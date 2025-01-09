@@ -1,8 +1,22 @@
 from ..app import app, BACKEND_URL
 from ..forms import EmailForm,RegisterForm, LoginForm
+from ..db.models import User
 from flask import render_template, redirect, url_for, request
 from flask_login import login_user
 from requests import get, post
+from flask_login import LoginManager
+
+login_manager = LoginManager()
+login_manager.login_view = "login"
+login_manager.init_app(app)
+
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    response = get(f"{BACKEND_URL}/api/user/get_user_by_id?user_id={user_id}")
+    if response.status_code == 200:
+        return User(response.json())
 
 
 
@@ -18,8 +32,8 @@ def post_email():
 
     if form.validate_on_submit():
         email = form.email.data
-        responce = get(f"{BACKEND_URL}/api/user/get_user_by_email?email={email}").json()
-        if responce.get("status") == "register":
+        response = get(f"{BACKEND_URL}/api/user/get_user_by_email?email={email}").json()
+        if response.get("status") == "register":
             return redirect(url_for("register",email=email))
         return redirect(url_for("login"),email=email)
     
@@ -41,11 +55,14 @@ def post_register():
             "password": form.password.data,
             "email": form.email.data
         }
-        responce = post(f"{BACKEND_URL}/api/user/register",json=data)
-        if responce.status_code == 200:
-            return responce.text
-        if responce.status_code == 422:
-            error = responce.json().get("detail", "Unknown error")[0].get("msg")
+        response = post(f"{BACKEND_URL}/api/user/register",json=data)
+        if response.status_code == 200:
+            user_data = response.json()
+            user = User(user_data)
+            login_user(user)
+            return redirect(url_for("index"))
+        if response.status_code == 422:
+            error = response.json().get("detail", "Unknown error")[0].get("msg")
             return render_template("register.html", form=form, error=error)
     else:
         return render_template("register.html", form=form)

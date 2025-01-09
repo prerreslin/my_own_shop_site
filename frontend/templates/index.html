@@ -7,22 +7,8 @@
     <link rel="stylesheet" href="../static/index.css">
 </head>
 <body>
+    {% include 'navbar.html' %}
     <div class="frame-9">
-        <img class="rectangle-3" src="../static/photos/Rectangle 3.svg" />
-        <div class="new">New</div>
-        <div class="men">Men</div>
-        <div class="women">Women</div>
-        <div class="sale">Sale</div>
-        <div class="jordan">Jordan</div>
-        <div class="kids">Kids</div>
-        <div class="help">| Help |</div>
-        <div class="join-us">Join Us |</div>
-        <div class="sign-in">
-          <a href="/email">Sign In |</a>
-        </div>
-        <div class="rectangle-2"></div>
-        <img class="search" src="../static/photos/Search.png" />
-        <div class="search2">Search</div>
         <img class="image-23" src="../static/photos/image 23.png" />
         <div class="nike-sb-dunk-travis-scott">
           <span>
@@ -48,13 +34,42 @@
         <div class="rectangle-10"></div>
         <img class="image-15" src="../static/photos/image 15.png" />
         <div class="blazer">Blazer</div>
-        <div class="dota-fortnite">DotaFortnite</div>
         <img class="unsplash-6-ha-ngmw-vn-mc" src="../static/photos/unsplash_6haNgmwVNMc.png" />
         <img class="unsplash-ebx-bl-iiey-6-g" src="../static/photos/unsplash_ebxBLIiey6g.png" />
         <img class="unsplash-nifvl-r-h-rog" src="../static/photos/unsplash_nifvlR_hRog.png" />
         <img class="unsplash-g-sw-m-qz-hue-xk" src="../static/photos/unsplash_GSwMQzHUEXk.png" />
         <div class="rectangle-12"></div>
         <div class="rectangle-13"></div>
-    </div>      
-</body>
-</html>
+        <img class="unsplash-fz-92-ybo-3-n-0-m" src="../static/photos/unsplash_fz92ybo3N0M.png" />
+        <div class="group-51">
+          <div class="always-iconic">Always Iconic</div>
+          <div class="buy-it-first">Buy it FIRST</div>
+          <div class="run-in-the-dark">Run in the DARK</div>
+          <div class="run-faster">Run FASTER</div>
+          <div class="nike-dunk-retro">Nike Dunk Retro</div>
+          <div class="nike-air-jordan-1">Nike Air Jordan 1</div>
+          <div class="nike-dunk-x-travis-scott">Nike Dunk x Travis Scott</div>
+          <div class="nike-air-max-plus">Nike Air Max Plus</div>
+          <div class="group-18" onclick="window.location.href='{{ url_for('cloth_type') }}?type=Nike Dunk Retro&clothing=Shoes';">
+            <div class="rectangle-9"></div>
+            <div class="shop">Shop</div>
+          </div>
+          <div class="group-25" onclick="window.location.href='{{ url_for('cloth_type') }}?type=Nike Air Jordan 1&clothing=Shoes';">
+            <div class="rectangle-92"></div>
+            <div class="shop2">Shop</div>
+          </div>
+          <div class="group-24" onclick="window.location.href='{{ url_for('cloth_type') }}?type=Nike Dunk x Travis Scott&clothing=Shoes';">
+            <div class="rectangle-93"></div>
+            <div class="shop3">Shop</div>
+          </div>
+          <div class="group-19" onclick="window.location.href='{{ url_for('cloth_type') }}?type=Nike Air Max Plus&clothing=Shoes';">
+            <div class="rectangle-94"></div>
+            <div class="shop4">Shop</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>   
+  </body>
+  </html>

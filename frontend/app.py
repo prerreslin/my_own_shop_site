@@ -12,4 +12,5 @@ app = Flask(__name__, template_folder="templates")
 app.secret_key = SECRET_KEY
 asgi_app = WsgiToAsgi(app)
 
+
 from . import routes

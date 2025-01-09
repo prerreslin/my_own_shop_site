@@ -31,5 +31,5 @@ def up():
 def down():
     Base.metadata.drop_all(bind=engine)
 
-down()
+# down()
 up()

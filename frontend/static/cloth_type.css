@@ -1,0 +1,160 @@
+@font-face {
+  font-family: "Alkalami-Regular";
+  src: url("../static/fonts/Alkalami/Alkalami-Regular.ttf");
+}
+@font-face {
+  font-family: "ArchivoNarrow-Medium";
+  src: url("../static/fonts/Archivo_Narrow/static/ArchivoNarrow-Medium.ttf");
+}
+@font-face {
+  font-family: "Alexandria-Regular";
+  src: url("../static/fonts/Alexandria/static/Alexandria-Regular.ttf");
+}
+
+.group-52 {
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+}
+body {
+    width: 100vw;
+    height: auto;
+    overflow-x: hidden;
+}
+.rectangle-16 {
+  width: 1920px;
+  height: 62px;
+  position: absolute;
+  left: 0px;
+  top: 79px;
+  overflow: visible;
+}
+.rectangle-15 {
+  background: #ebebeb;
+  border-radius: 73px;
+  width: 143px;
+  height: 37px;
+  position: absolute;
+  left: 1662px;
+  top: 22px;
+}
+.type {
+  color: #000000;
+  text-align: left;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  top: 163px;
+  left: 73px;
+  width: 100%;
+  height: 27px;
+}
+.nike-dunk-shoes {
+  color: #000000;
+  text-align: left;
+  font-family: "Alkalami-Regular", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  position: absolute;
+  left: 73px;
+  top: 211px;
+  width: 100%;
+  height: 37px;
+}
+.rectangle-17 {
+  background: #f2f2f2;
+  width: 592px;
+  height: 592px;
+  position: absolute;
+  left: 44px;
+  top: 298px;
+}
+.rectangle-44 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  top: 250px;
+  position: relative;
+  background: transparent;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.shoe-card {
+  background: #ffffffee;
+  border: 1px solid #d6d6d6;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+  height: 750px;
+}
+
+.group-26 {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.image-24 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-self: flex-start;
+  position: absolute;
+  border: 1px solid #d3d3d3;
+  transition: opacity 0.5s ease;
+}
+
+.group-26:hover .orig{
+  opacity: 0;
+}
+.group-26:hover .hover{
+  opacity: 1;
+}
+.image-24.hover {
+  opacity: 0;
+}
+
+.group-29 {
+  padding: 15px;
+}
+
+.best-seller {
+  color: #a40000;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+  display: flex;
+  align-self:flex-start;
+}
+.item-name {
+  color: #000000;
+  text-align: center;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  display: flex;
+  align-self:flex-start;
+}
+.item-description {
+  color: #808080;
+  text-align: center;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  display: flex;
+  align-self:flex-start;
+}
+.item-price {
+  color: #000000;
+  text-align: center;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  display: flex;
+  align-self:flex-start;
+}

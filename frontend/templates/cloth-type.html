@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/navbar.css">
+    <link rel="stylesheet" href="../static/cloth_type.css">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <div class="group-52">
+        <img class="rectangle-16" src="../static/photos/Rectangle 16.png" />
+        <div class="type">{{ type_of }}&nbsp;/&nbsp;{{ clothing }}</div>
+        <div class="nike-dunk-shoes">{{ clothing }}&nbsp;{{ type_of }}</div>
+        <div class="rectangle-44">
+            {% for item in clothes %}
+            <div class="shoe-card" onclick="window.location.href='{{ url_for('cloth_info') }}?id={{ item.id }}';">
+                <div class="group-26">
+                    <img class="image-24 orig" src="../static/photos/uploads/{{ item.id }}/{{ item.photo }}"/>
+                    <img class="image-24 hover" src="../static/photos/uploads/{{ item.id }}/{{ item.photo_hover }}">
+                </div>
+                <div class="group-29">
+                    <div class="best-seller">{{ item.discount }}</div>
+                    <div class="item-name">{{ item.name }}</div>
+                    <div class="item-description">{{ item.gender }}&nbsp;{{ item.type_of_clothes }}</div>
+                    <div class="item-price">${{ item.price }}</div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

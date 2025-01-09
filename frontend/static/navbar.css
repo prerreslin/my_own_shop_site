@@ -1,0 +1,228 @@
+@font-face {
+    font-family: "Nats-Regular";
+    src: url("../static/fonts/nats/NATS-Regular.ttf");
+}
+@font-face {
+    font-family: "Alexandria-ExtraBold";
+    src: url("../static/fonts/Alexandria/static/Alexandria-ExtraBold.ttf");
+}
+@font-face {
+    font-family: "AlfaSlabOne-Regular";
+    src: url("../static/fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf");
+}
+@font-face {
+    font-family: "Alexandria-Black";
+    src: url("../static/fonts/Alexandria/static/Alexandria-Black.ttf");
+}
+@font-face {
+    font-family: "Alexandria-Bold";
+    src: url("../static/fonts/Alexandria/static/Alexandria-Bold.ttf");
+}
+@font-face {
+    font-family: "Inter";
+    src: url("../static/fonts/Inter/static/Inter_18pt-BlackItalic.ttf");
+}
+@font-face {
+    font-family: "Alkalami-Regular";
+    src: url("../static/fonts/Alkalami/Alkalami-Regular.ttf");
+}
+@font-face {
+    font-family: "ArchivoNarrow-Medium";
+    src: url("../static/fonts/Archivo_Narrow/static/ArchivoNarrow-Medium.ttf");
+}
+@font-face {
+    font-family: "Alexandria-Regular";
+    src: url("../static/fonts/Alexandria/static/Alexandria-Regular.ttf");
+}
+  
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: gray;
+}
+.rectangle-3 {
+width: 1920px;
+height: 91px;
+position: absolute;
+left: -6px;
+top: 6px;
+overflow: visible;
+}
+.new {
+color: #000000;
+text-align: center;
+font-family: "ArchivoNarrow-Medium", sans-serif;
+font-size: 24px;
+font-weight: 500;
+position: absolute;
+left: 713px;
+top: 15px;
+width: 81px;
+height: 64px;
+cursor: pointer;
+}
+.men {
+color: #000000;
+text-align: center;
+font-family: "ArchivoNarrow-Medium", sans-serif;
+font-size: 24px;
+font-weight: 500;
+position: absolute;
+left: 799px;
+top: 15px;
+width: 63px;
+height: 64px;
+}
+.women {
+color: #000000;
+text-align: center;
+font-family: "ArchivoNarrow-Medium", sans-serif;
+font-size: 24px;
+font-weight: 500;
+position: absolute;
+left: 857px;
+top: 15px;
+width: 120px;
+height: 64px;
+}
+.sale {
+color: #000000;
+text-align: center;
+font-family: "ArchivoNarrow-Medium", sans-serif;
+font-size: 24px;
+font-weight: 500;
+position: absolute;
+left: 1144px;
+top: 15px;
+width: 64px;
+height: 62px;
+}
+.jordan {
+color: #000000;
+text-align: center;
+font-family: "ArchivoNarrow-Medium", sans-serif;
+font-size: 24px;
+font-weight: 500;
+position: absolute;
+left: 1039px;
+top: 15px;
+width: 105px;
+height: 64px;
+}
+.kids {
+color: #000000;
+text-align: center;
+font-family: "ArchivoNarrow-Medium", sans-serif;
+font-size: 24px;
+font-weight: 500;
+position: absolute;
+left: 972px;
+top: 15px;
+width: 67px;
+height: 64px;
+}
+.nike {
+    width: 79px;
+    height: 79px;
+    position: absolute;
+    left: 50px;
+    top: 0px;
+    object-fit: cover;
+}
+.help {
+color: #000000;
+text-align: center;
+font-family: "Nats-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+}
+.join-us {
+color: #000000;
+text-align: center;
+font-family: "Nats-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+}
+.sign-in {
+color: #000000;
+text-align: center;
+font-family: "Nats-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+cursor: pointer;
+}
+.user-info {
+    color: #000000;
+    text-align: center;
+    font-family: "Nats-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.group-8 {
+position: absolute;
+inset: 0;
+}
+.nav-down {
+    width: 100%;
+    height: 100px;
+    top: 110px;
+    position: absolute;
+}
+.rectangle-2 {
+background: #f0f0f0;
+border-radius: 300px;
+width: 201px;
+height: 38px;
+position: absolute;
+left: 1653px;
+top: 123px;
+}
+.search {
+width: 24px;
+height: 24px;
+position: absolute;
+left: 1664px;
+top: 131px;
+object-fit: cover;
+}
+.search2 {
+color: #a0a0a0;
+text-align: center;
+font-family: "Nats-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+position: absolute;
+left: 1667px;
+top: 125px;
+width: 113px;
+height: 60px;
+}
+.dota-fortnite {
+    color: #000000;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    font-style: italic;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 242px;
+    height: 53px;
+    cursor: pointer;
+}
+.navbar {
+    position: fixed;
+    margin-top: 25px;
+    background-color: transparent;
+}
+.nav-item {
+    display: flex;
+    align-items: flex-end;
+}
+.custom-navbar {
+    margin-right: 25px;
+}

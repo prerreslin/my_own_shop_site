@@ -45,3 +45,11 @@ def get_user_by_email(email:str):
             return {"status":"register"}
         return {"status":"login"}
         
+
+@api_router.get("/user/get_user_by_id")
+def get_user_by_id(user_id:int):
+    with Session() as session:
+        user = session.query(User).where(User.id == user_id).first()
+        if not user:
+            raise HTTPException(404,"User not exists")
+        return user

@@ -9,6 +9,7 @@ class User(Base):
     password:Mapped[str] = mapped_column(nullable=False)
     email:Mapped[str] = mapped_column(nullable=False,unique=True)
 
+
     @validates("password")
     def validate_password(self,key,value):
         hashed_password = hashpw(value.encode("utf-8"), gensalt())
