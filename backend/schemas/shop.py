@@ -20,7 +20,7 @@ class GenderEnum(str, Enum):
     choice1 = "Men's"
     choice2 = "Woman's"
     choice3 = "Men's / Woman's"
-    choice4 = "Kids"
+    choice4 = "Kid's"
     
 
 class DiscountEnum(str, Enum):

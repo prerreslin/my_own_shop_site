@@ -1,0 +1,459 @@
+@font-face {
+    font-family: "ABeeZee-Regular";
+    src: url("../static/fonts/ABeeZee/ABeeZee-Regular.ttf");
+}
+@font-face {
+    font-family: "Alexandria-Regular";
+    src: url("../static/fonts/Alexandria/static/Alexandria-Regular.ttf");
+}
+@font-face {
+    font-family: "Arimo-Bold";
+    src: url("../static/fonts/Arimo/static/Arimo-Bold.ttf");
+}
+@font-face {
+    font-family: "Arimo-Regular";
+    src: url("../static/fonts/Arimo/static/Arimo-Regular.ttf");
+}
+@font-face {
+    font-family: "Arimo-Light";
+    src: url("../static/fonts/Arimo/static/Arimo-Regular.ttf");
+}
+
+
+.frame-18,
+.frame-18 * {
+  box-sizing: border-box;
+}
+.frame-18 {
+  background: #ffffff;
+  height: 1541px;
+  position: relative;
+  overflow: hidden;
+}
+.rectangle-34 {
+  width: 1327px;
+  height: 3px;
+  position: absolute;
+  left: 272px;
+  top: 978px;
+  overflow: visible;
+}
+.resources-gift-cards-find-a-store-membership-nike-journal-site-feedback {
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 18px;
+  line-height: 0undefined;
+  font-weight: 400;
+  position: absolute;
+  left: 272px;
+  top: 1055px;
+  width: 134px;
+  height: 249px;
+}
+.resources-gift-cards-find-a-store-membership-nike-journal-site-feedback-span {
+  color: #000000;
+  font-family: "Arimo-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.resources-gift-cards-find-a-store-membership-nike-journal-site-feedback-span2 {
+  color: #6e6e6e;
+  font-family: "ABeeZee-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 168.8%;
+  font-weight: 400;
+}
+.company-about-nike-news-careers-investors-purpose-sustainability {
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 18px;
+  line-height: 0undefined;
+  font-weight: 400;
+  position: absolute;
+  left: 746px;
+  top: 1060px;
+  width: 134px;
+  height: 249px;
+}
+.company-about-nike-news-careers-investors-purpose-sustainability-span {
+  color: #000000;
+  font-family: "Arimo-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.company-about-nike-news-careers-investors-purpose-sustainability-span2 {
+  color: #6e6e6e;
+  font-family: "ABeeZee-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 168.8%;
+  font-weight: 400;
+}
+.promotions-discounts-student-military-teacher-first-responders-medical-professionals-birthday {
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 18px;
+  line-height: 0undefined;
+  font-weight: 400;
+  position: absolute;
+  left: 983px;
+  top: 1060px;
+  width: 215px;
+  height: 249px;
+}
+.promotions-discounts-student-military-teacher-first-responders-medical-professionals-birthday-span {
+  color: #000000;
+  font-family: "Arimo-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.promotions-discounts-student-military-teacher-first-responders-medical-professionals-birthday-span2 {
+  color: #6e6e6e;
+  font-family: "ABeeZee-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 168.8%;
+  font-weight: 400;
+}
+.united-states {
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 18px;
+  line-height: 0undefined;
+  font-weight: 400;
+  position: absolute;
+  left: 1472px;
+  top: 1030px;
+  width: 121px;
+  height: 56px;
+}
+.united-states-span {
+  color: #000000;
+  font-family: "Arimo-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.united-states-span2 {
+  color: #6e6e6e;
+  font-family: "ABeeZee-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 168.8%;
+  font-weight: 400;
+}
+.help-get-help-order-status-shipping-and-delivery-returns-order-cancellation-payment-options-gift-card-balance-contact-us {
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 18px;
+  line-height: 0undefined;
+  font-weight: 400;
+  position: absolute;
+  left: 509px;
+  top: 1055px;
+  width: 134px;
+  height: 427px;
+}
+.help-get-help-order-status-shipping-and-delivery-returns-order-cancellation-payment-options-gift-card-balance-contact-us-span {
+  color: #000000;
+  font-family: "Arimo-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.help-get-help-order-status-shipping-and-delivery-returns-order-cancellation-payment-options-gift-card-balance-contact-us-span2 {
+  color: #6e6e6e;
+  font-family: "ABeeZee-Regular", sans-serif;
+  font-size: 18px;
+  line-height: 168.8%;
+  font-weight: 400;
+}
+.bag2 {
+  color: #000000;
+  text-align: center;
+  font-family: "ABeeZee-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: absolute;
+  left: 354px;
+  top: 292px;
+  width: 139px;
+  height: 55px;
+}
+.summary {
+  color: #000000;
+  text-align: center;
+  font-family: "ABeeZee-Regular", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  position: absolute;
+  left: 1176px;
+  top: 292px;
+  width: 231px;
+  height: 55px;
+}
+.image-38 {
+  width: 355px;
+  height: 359px;
+  position: absolute;
+  left: 373px;
+  top: 360px;
+  object-fit: cover;
+}
+.group-39 {
+  position: absolute;
+  inset: 0;
+}
+.nike-dunk-low-retro {
+  color: #000000;
+  text-align: center;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  position: absolute;
+  left: 748px;
+  top: 362px;
+  width: 187px;
+  height: 44.39px;
+}
+.men-s-shoes {
+  color: #808080;
+  text-align: center;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  position: absolute;
+  left: 740px;
+  top: 395.29px;
+  width: 104px;
+  height: 22.19px;
+}
+._115-00 {
+  color: #000000;
+  text-align: center;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 1079px;
+  top: 362px;
+  width: 82px;
+  height: 22px;
+}
+._115-002 {
+  color: #000000;
+  text-align: center;
+  font-family: "Alexandria-Light", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  position: absolute;
+  left: 1465px;
+  top: 395px;
+  width: 55px;
+  height: 14px;
+}
+._115-003 {
+  color: #000000;
+  text-align: center;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: absolute;
+  left: 1465px;
+  top: 516px;
+  width: 55px;
+  height: 14px;
+}
+.free {
+  color: #000000;
+  text-align: center;
+  font-family: "Alexandria-Light", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  position: absolute;
+  left: 1489px;
+  top: 420px;
+  width: 31px;
+  height: 14px;
+}
+.div {
+  color: #000000;
+  text-align: center;
+  font-family: "Alexandria-Light", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  position: absolute;
+  left: 1511px;
+  top: 442px;
+  width: 10px;
+  height: 19px;
+}
+.white-grey-fog {
+  color: #808080;
+  text-align: center;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 748px;
+  top: 421px;
+  width: 100px;
+  height: 22px;
+}
+.size {
+  color: #808080;
+  text-align: center;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 748px;
+  top: 446px;
+  width: 100px;
+  height: 22px;
+}
+.rectangle-35 {
+  background: #ffffff;
+  border-radius: 101px;
+  border-style: solid;
+  border-color: #808080;
+  border-width: 0.5px;
+  width: 129px;
+  height: 49px;
+  position: absolute;
+  left: 373px;
+  top: 740px;
+}
+._1 {
+  color: #000000;
+  text-align: center;
+  font-family: "ABeeZee-Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  left: 432px;
+  top: 756px;
+  width: 11px;
+  height: 17px;
+}
+.div2 {
+  color: #000000;
+  text-align: center;
+  font-family: "ABeeZee-Regular", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  position: absolute;
+  left: 476px;
+  top: 751px;
+  width: 11px;
+  height: 20px;
+}
+.do-you-have-a-promo-code {
+  color: #000000;
+  text-align: center;
+  font-family: "Alexandria-Light", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  position: absolute;
+  left: 1198px;
+  top: 362px;
+  width: 219px;
+  height: 23px;
+}
+.subtotal {
+  color: #000000;
+  text-align: center;
+  font-family: "Alexandria-Light", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  position: absolute;
+  left: 1198px;
+  top: 391px;
+  width: 70px;
+  height: 23px;
+}
+.estimated-tax {
+  color: #000000;
+  text-align: center;
+  font-family: "Alexandria-Light", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  position: absolute;
+  left: 1198px;
+  top: 445px;
+  width: 111px;
+  height: 23px;
+}
+.total {
+  color: #000000;
+  text-align: center;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  position: absolute;
+  left: 1200px;
+  top: 512px;
+  width: 39px;
+  height: 23px;
+}
+.estimated-shipping-handling {
+  color: #000000;
+  text-align: center;
+  font-family: "Alexandria-Light", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  position: absolute;
+  left: 1190px;
+  top: 418px;
+  width: 248px;
+  height: 23px;
+}
+.rectangle-36 {
+  width: 372px;
+  height: 32px;
+  position: absolute;
+  left: 1194px;
+  top: 359px;
+}
+.rectangle-37 {
+  width: 356px;
+  height: 32px;
+  position: absolute;
+  left: 1194px;
+  top: 391px;
+}
+.rectangle-38 {
+  background: #d9d9d9;
+  width: 321px;
+  height: 1px;
+  position: absolute;
+  left: 1200px;
+  top: 489px;
+}
+.rectangle-39 {
+  background: #d9d9d9;
+  width: 321px;
+  height: 1px;
+  position: absolute;
+  left: 1200px;
+  top: 557px;
+}
+.rectangle-40 {
+  background: #000000;
+  border-radius: 80px;
+  width: 324px;
+  height: 70px;
+  position: absolute;
+  left: 1197px;
+  top: 601px;
+}
+.checkout {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 1231px;
+  top: 612px;
+  width: 257px;
+  height: 47px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,13 +1,14 @@
 from ..schemas import ShopModel
 from ..app import api_router
 from ..db import Session
-from ..db.models import Shop
+from ..db.models import Shop,User
 
 from fastapi import HTTPException,UploadFile, Form
 from typing import Annotated
 import os
 import shutil
-from sqlalchemy import func, or_
+from sqlalchemy import or_, literal
+from sqlalchemy.sql import func
 
 UPLOAD_FOLDER = './frontend/static/photos/uploads'
 
@@ -84,17 +85,8 @@ def remove_clothing(id):
             raise HTTPException(status_code=404, detail="Clothing not found")
         
         path = os.path.join(UPLOAD_FOLDER, str(shop.id))
+        shutil.rmtree(path)
 
-        if shop.photo:
-            os.remove(os.path.join(path, shop.photo))
-        if shop.photo_hover:
-            os.remove(os.path.join(path, shop.photo_hover))
-        if shop.variable:
-            os.remove(os.path.join(path, shop.variable))
-        if shop.photos:
-            for i in shop.photos:
-                os.remove(os.path.join(path, i))
-        
         session.delete(shop)
         session.commit()
 
@@ -182,7 +174,11 @@ def get_all_clothing_by_type(type_of:str):
 @api_router.get("/shop/get_all_clothing_by_gender")
 def get_all_clothing_by_type(gender:str):
     with Session() as session:
-        shop = session.query(Shop).where(or_(Shop.gender == gender, Shop.gender == "Men's / Woman's")).all()
+        shop = None
+        if gender == "Kid's":
+            shop = session.query(Shop).where(Shop.gender == gender).all()
+        else:
+            shop = session.query(Shop).where(or_(Shop.gender == gender, Shop.gender == "Men's / Woman's")).all()
         if not shop:
             raise HTTPException(404,"Clothing not found") 
         return shop
@@ -203,4 +199,70 @@ def get_all_clothing_by_type(id:int):
         shop = session.query(Shop).where(Shop.id == id).first()
         if not shop:
             raise HTTPException(404,"Clothing not found")
+        return {"data":shop,"users":shop.users}
+    
+
+@api_router.get("/shop/search_clothing")
+def search_clothing(search: str):
+    with Session() as session:
+        shop = session.query(Shop).where(Shop.name.contains(search)).all()
+        if not shop:
+            raise HTTPException(404, "Clothing not found")
+        return shop
+
+
+    
+
+@api_router.post("/shop/add_favourite")
+def add_favourite(user_id:int,shop_id:int):
+    with Session() as session:
+        user = session.query(User).where(User.id == user_id).first()
+        shop = session.query(Shop).where(Shop.id == shop_id).first()
+        if not user:
+            raise HTTPException(404,"User not exists")
+        if not shop:
+            raise HTTPException(404,"User not exists")
+        user.favourites.append(shop)
+        session.commit()
+        return user
+    
+
+@api_router.get("/shop/check_for_favourite")
+def check_for_favourite(user_id:int,shop_id:int):
+    with Session() as session:
+        user = session.query(User).where(User.id == user_id).first()
+        shop = session.query(Shop).where(Shop.id == shop_id).first()
+        if not user:
+            raise HTTPException(404,"User not exists")
+        if not shop:
+            raise HTTPException(404,"User not exists")
+        if shop in user.favourites:
+            return {"data":"true"}
+        return {"data":"false"}
+    
+
+@api_router.get("/shop/get_all_clothing_by_favourite")
+def get_all_clothing_by_favourite(user_id:int):
+    with Session() as session:
+        user = session.query(User).where(User.id == user_id).first()
+        if not user:
+            raise HTTPException(404,"User not exists")
+        return user.favourites
+    
+
+@api_router.get("/shop/get_jordans")
+def get_jordans():
+    with Session() as session:
+        shop = session.query(Shop).filter(Shop.name.contains("Jordan")).all()
+        if not shop:
+            raise HTTPException(status_code=404, detail="Clothing not found")
+        return shop
+    
+
+@api_router.get("/shop/get_all_clothing_by_sale")
+def get_all_clothing_by_sale():
+    with Session() as session:
+        shop = session.query(Shop).where(Shop.discount == "Sale").all()
+        if not shop:
+            raise HTTPException(status_code=404, detail="Clothing not found")
         return shop

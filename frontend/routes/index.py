@@ -7,3 +7,8 @@ def index():
     if current_user.is_authenticated:
         return render_template("index.html",user=current_user)
     return render_template("index.html")
+
+
+@app.get("/nav")
+def nav():
+    return render_template("navbar.html")

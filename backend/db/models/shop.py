@@ -1,6 +1,7 @@
 from .. import Base
+from .union import user_favourite_table
 from typing import Dict,List
-from sqlalchemy.orm import Mapped,mapped_column
+from sqlalchemy.orm import Mapped,mapped_column,relationship
 from sqlalchemy.types import JSON
 from datetime import datetime
 
@@ -22,3 +23,9 @@ class Shop(Base):
     photo_hover:Mapped[str] = mapped_column(nullable=False)
     photos:Mapped[List] = mapped_column(JSON)
     variable:Mapped[str] = mapped_column(nullable=True)
+
+    users: Mapped[List["User"]] = relationship(
+        "User",
+        secondary=user_favourite_table,
+        back_populates="favourites",
+    )

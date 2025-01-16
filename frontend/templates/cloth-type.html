@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="../static/cloth_type.css">
 </head>
 <body>
-    {% include 'navbar.html' %}
+    {% include '__navbar.html' %}
     <div class="group-52">
         <img class="rectangle-16" src="../static/photos/Rectangle 16.png" />
-        <div class="type">{{ type_of }}&nbsp;/&nbsp;{{ clothing }}</div>
+        <div class="type">{{ clothing }}&nbsp;/&nbsp;{{ type_of }}</div>
         <div class="nike-dunk-shoes">{{ clothing }}&nbsp;{{ type_of }}</div>
         <div class="rectangle-44">
             {% for item in clothes %}

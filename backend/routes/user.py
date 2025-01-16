@@ -1,5 +1,5 @@
 from ..db import Session
-from ..db.models import User
+from ..db.models import User, Shop
 from ..app import api_router
 from ..schemas import UserModel,LoginModel
 from fastapi import HTTPException

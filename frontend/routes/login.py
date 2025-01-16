@@ -62,6 +62,8 @@ def post_register():
             return redirect(url_for("index"))
         if response.status_code == 422:
             error = response.json().get("detail", "Unknown error")[0].get("msg")
+            error = error.replace("Value error,", "")
+            error = error.replace("String", "")
             return render_template("register.html", form=form, error=error)
     else:
         return render_template("register.html", form=form)
