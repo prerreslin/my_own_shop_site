@@ -1,11 +1,13 @@
 from ..db import Session
-from ..db.models import User, Shop
-from ..app import api_router
+from ..db.models import User
 from ..schemas import UserModel,LoginModel
-from fastapi import HTTPException
+from fastapi import HTTPException, APIRouter
 from bcrypt import checkpw
 
-@api_router.post("/user/register")
+
+user_router = APIRouter(prefix="/user", tags=["User"])
+
+@user_router.post("/register")
 def register(data:UserModel):
     with Session() as session:
         user = session.query(User).where(User.username == data.username).first()
@@ -22,7 +24,7 @@ def register(data:UserModel):
         return user
 
 
-@api_router.post("/user/login")
+@user_router.post("/login")
 def login(data:LoginModel):
     with Session() as session:
         user = session.query(User).where(User.email == data.email).first()
@@ -35,7 +37,7 @@ def login(data:LoginModel):
         raise HTTPException(401,"Password is wrong")
     
 
-@api_router.get("/user/get_user_by_email")
+@user_router.get("/get_user_by_email")
 def get_user_by_email(email:str):
     with Session() as session:
         user = session.query(User).where(User.email == email).first()
@@ -44,7 +46,7 @@ def get_user_by_email(email:str):
         return {"status":"login"}
         
 
-@api_router.get("/user/get_user_by_id")
+@user_router.get("/get_user_by_id")
 def get_user_by_id(user_id:int):
     with Session() as session:
         user = session.query(User).where(User.id == user_id).first()

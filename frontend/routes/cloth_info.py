@@ -5,6 +5,13 @@ from flask_login import current_user
 
 @app.get("/cloth-info")
 def cloth_info():
+    gift = request.args.get("gift")
+    if gift:
+        responce = get(f"{BACKEND_URL}/api/gift_cards/get_by_id?id={gift}").json()
+        print(responce)
+        if not responce["name"]:
+            return redirect(url_for("gift_cards"))
+        return render_template("cloth-info.html", clothing=responce)
     id = request.args.get("id")
     favourite = request.args.get("favourite")
     response = get(f"{BACKEND_URL}/api/shop/get_all_clothing_by_id?id={id}").json()

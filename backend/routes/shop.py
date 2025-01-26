@@ -1,20 +1,22 @@
 from ..schemas import ShopModel
-from ..app import api_router
 from ..db import Session
 from ..db.models import Shop,User
 
-from fastapi import HTTPException,UploadFile, Form
+from fastapi import HTTPException, Form, APIRouter
 from typing import Annotated
 import os
 import shutil
-from sqlalchemy import or_, literal
+from sqlalchemy import or_
 from sqlalchemy.sql import func
 
 UPLOAD_FOLDER = './frontend/static/photos/uploads'
 
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-@api_router.post("/shop/add_new_clothing")
+shop_router = APIRouter(prefix="/shop", tags=["Shop"])
+
+
+@shop_router.post("/add_new_clothing")
 def add_new_clothing(data:Annotated[ShopModel, Form(media_type="multipart/form-data")]):
     with Session() as session:
         shop = Shop(
@@ -76,7 +78,7 @@ def add_new_clothing(data:Annotated[ShopModel, Form(media_type="multipart/form-d
     
 
 
-@api_router.delete("/shop/{id}/remove_clothing")
+@shop_router.delete("/remove_clothing/{id}")
 def remove_clothing(id):
     with Session() as session:
         shop = session.query(Shop).filter(Shop.id == id).first()
@@ -93,7 +95,7 @@ def remove_clothing(id):
         return {"message": "Clothing is deleted"}
     
 
-@api_router.put("/shop/{id}/change_clothing")
+@shop_router.put("/change_clothing/{id}")
 def change_clothing(id,data:Annotated[ShopModel, Form(media_type="multipart/form-data")]):
     with Session() as session:
         shop = session.query(Shop).where(Shop.id == id).first() 
@@ -162,7 +164,7 @@ def change_clothing(id,data:Annotated[ShopModel, Form(media_type="multipart/form
         return shop
     
 
-@api_router.get("/shop/get_all_clothing_by_type")
+@shop_router.get("/get_all_clothing_by_type")
 def get_all_clothing_by_type(type_of:str):
     with Session() as session:
         shop = session.query(Shop).where(Shop.name_of_clothes == type_of).all()
@@ -171,7 +173,7 @@ def get_all_clothing_by_type(type_of:str):
         return shop
     
 
-@api_router.get("/shop/get_all_clothing_by_gender")
+@shop_router.get("/get_all_clothing_by_gender")
 def get_all_clothing_by_type(gender:str):
     with Session() as session:
         shop = None
@@ -184,7 +186,7 @@ def get_all_clothing_by_type(gender:str):
         return shop
     
 
-@api_router.get("/shop/get_all_clothing")
+@shop_router.get("/get_all_clothing")
 def get_all_clothing():
     with Session() as session:
         shop = session.query(Shop).all()
@@ -193,7 +195,7 @@ def get_all_clothing():
         return shop
     
 
-@api_router.get("/shop/get_all_clothing_by_id")
+@shop_router.get("/get_all_clothing_by_id")
 def get_all_clothing_by_type(id:int):
     with Session() as session:
         shop = session.query(Shop).where(Shop.id == id).first()
@@ -202,7 +204,7 @@ def get_all_clothing_by_type(id:int):
         return {"data":shop,"users":shop.users}
     
 
-@api_router.get("/shop/search_clothing")
+@shop_router.get("/search_clothing")
 def search_clothing(search: str):
     with Session() as session:
         shop = session.query(Shop).where(Shop.name.contains(search)).all()
@@ -213,7 +215,7 @@ def search_clothing(search: str):
 
     
 
-@api_router.post("/shop/add_favourite")
+@shop_router.post("/add_favourite")
 def add_favourite(user_id:int,shop_id:int):
     with Session() as session:
         user = session.query(User).where(User.id == user_id).first()
@@ -227,7 +229,7 @@ def add_favourite(user_id:int,shop_id:int):
         return user
     
 
-@api_router.get("/shop/check_for_favourite")
+@shop_router.get("/check_for_favourite")
 def check_for_favourite(user_id:int,shop_id:int):
     with Session() as session:
         user = session.query(User).where(User.id == user_id).first()
@@ -241,7 +243,7 @@ def check_for_favourite(user_id:int,shop_id:int):
         return {"data":"false"}
     
 
-@api_router.get("/shop/get_all_clothing_by_favourite")
+@shop_router.get("/get_all_clothing_by_favourite")
 def get_all_clothing_by_favourite(user_id:int):
     with Session() as session:
         user = session.query(User).where(User.id == user_id).first()
@@ -250,7 +252,7 @@ def get_all_clothing_by_favourite(user_id:int):
         return user.favourites
     
 
-@api_router.get("/shop/get_jordans")
+@shop_router.get("/get_jordans")
 def get_jordans():
     with Session() as session:
         shop = session.query(Shop).filter(Shop.name.contains("Jordan")).all()
@@ -259,7 +261,7 @@ def get_jordans():
         return shop
     
 
-@api_router.get("/shop/get_all_clothing_by_sale")
+@shop_router.get("/get_all_clothing_by_sale")
 def get_all_clothing_by_sale():
     with Session() as session:
         shop = session.query(Shop).where(Shop.discount == "Sale").all()

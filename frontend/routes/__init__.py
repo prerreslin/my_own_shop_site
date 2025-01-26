@@ -1,1 +1,1 @@
-from . import index, login, cloth_type, cloth_info, bag
+from . import index, login, cloth_type, cloth_info, bag, gift_cards

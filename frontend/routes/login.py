@@ -93,7 +93,7 @@ def post_login():
             login_user(user)
             return redirect(url_for("index"))
         else:
-            error = response.json().get("detail", "Unknown error")[0].get("msg")
+            error = response.json().get("detail", "Unknown error")
             return render_template("login.html", form=form, error=error)
             
             

@@ -11,4 +11,4 @@ def index():
 
 @app.get("/nav")
 def nav():
-    return render_template("navbar.html")
+    return render_template("__navbar.html")

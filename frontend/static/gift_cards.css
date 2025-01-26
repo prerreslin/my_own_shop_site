@@ -1,0 +1,314 @@
+@font-face {
+  font-family: "ArchivoNarrow-Medium";
+  src: url("../static/fonts/Archivo_Narrow/static/ArchivoNarrow-Medium.ttf");
+}
+@font-face {
+  font-family: "Inter-BlackItalic";
+  src: url("../static/fonts/Inter/static/Inter_18pt-BlackItalic.ttf");
+}
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("../static/fonts/Inter/static/Inter_18pt-Bold.ttf");
+}
+@font-face {
+  font-family: "Inter-Medium";
+  src: url("../static/fonts/Inter/static/Inter_18pt-Medium.ttf");
+}
+@font-face {
+  font-family: "Alexandria-Regular";
+  src: url("../static/fonts/Alexandria/static/Alexandria-Regular.ttf");
+}
+.frame-24 {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.nike-gift-cards {
+  color: #000000;
+  text-align: center;
+  font-family: "ArchivoNarrow-Medium", sans-serif;
+  font-size: 46px;
+  font-weight: 500;
+  position: absolute;
+  left: 61px;
+  top: 128px;
+  width: 339px;
+  height: 61px;
+}
+.mail-a-gift-card {
+  color: #000000;
+  text-align: center;
+  font-family: "ArchivoNarrow-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 582px;
+  top: 147px;
+  width: 231px;
+  height: 42px;
+}
+.email-a-gift-card {
+  color: #000000;
+  text-align: center;
+  font-family: "ArchivoNarrow-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 843px;
+  top: 147px;
+  width: 231px;
+  height: 42px;
+}
+.check-your-balance {
+  color: #000000;
+  text-align: center;
+  font-family: "ArchivoNarrow-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  position: absolute;
+  left: 1104px;
+  top: 147px;
+  width: 248px;
+  height: 42px;
+}
+.image-43 {
+  width: 461px;
+  height: 367px;
+  position: absolute;
+  left: 1398px;
+  top: 260px;
+  object-fit: cover;
+}
+.rectangle-55 {
+  background: linear-gradient(
+    180deg,
+    rgba(232, 221, 213, 1) 70.09997367858887%,
+    rgba(230, 199, 189, 1) 100%
+  );
+  width: 1323px;
+  height: 367px;
+  position: absolute;
+  left: 75px;
+  top: 260px;
+}
+.give-a-nike-gift-card {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-BlackItalic", sans-serif;
+  font-size: 90px;
+  font-weight: 900;
+  font-style: italic;
+  position: absolute;
+  left: 137px;
+  top: 280px;
+  width: 563px;
+  height: 196px;
+  line-height: 1.2;
+}
+.always-the-perfect-fit {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Bold", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: absolute;
+  left: 137px;
+  top: 505px;
+  width: 157px;
+  height: 20px;
+}
+.group-54 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-56 {
+  background: #ffffff;
+  border-radius: 139px;
+  width: 124px;
+  height: 27px;
+  position: absolute;
+  left: 137px;
+  top: 564px;
+}
+.mail-a-gift-card2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  position: absolute;
+  left: 151px;
+  top: 569px;
+  width: 97px;
+  height: 18px;
+}
+.group-55 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-562 {
+  background: #ffffff;
+  border-radius: 139px;
+  width: 124px;
+  height: 27px;
+  position: absolute;
+  left: 266px;
+  top: 564px;
+}
+.email-a-gift-card2 {
+  color: #000000;
+  text-align: left;
+  font-family: "Inter-Medium", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  position: absolute;
+  left: 276px;
+  top: 569px;
+  width: 104px;
+  height: 18px;
+}
+.frame-25 {
+  background: #d5d5d5;
+  width: 576px;
+  height: 406px;
+  position: absolute;
+  left: 86px;
+  top: 698px;
+  overflow: hidden;
+}
+.frame-26 {
+  background: #d5d5d5;
+  width: 575px;
+  height: 406px;
+  position: absolute;
+  left: 680px;
+  top: 698px;
+  overflow: hidden;
+}
+.image-44 {
+  width: 100%;
+  height: 406px;
+  position: absolute;
+  object-fit: cover;
+}
+.frame-252 {
+  background: #d5d5d5;
+  width: 576px;
+  height: 406px;
+  position: absolute;
+  left: 1273px;
+  top: 698px;
+  overflow: hidden;
+}
+.image- {
+  width: 575px;
+  height: 406px;
+  position: absolute;
+  left: 680px;
+  top: 698px;
+  object-fit: cover;
+}
+.image-46 {
+  width: 576px;
+  height: 406px;
+  position: absolute;
+  left: 1273px;
+  top: 698px;
+  object-fit: cover;
+}
+.nike-digital-gift-card {
+  display: flex;
+  color: #000000;
+  text-align: left;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  position: absolute;
+  top: 420px;
+  width: 182px;
+  height: 21px;
+  white-space: nowrap;
+}
+.emailed-and-approximately-2-hours-of-less {
+  display: flex;
+  color: #959595;
+  text-align: left;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  position: absolute;
+  top: 460px;
+  width: 369px;
+  height: 21px;
+}
+.nike-digital-gift-card2 {
+  color: #000000;
+  text-align: center;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  position: absolute;
+  left: 680px;
+  top: 1117px;
+  width: 182px;
+  height: 21px;
+}
+.emailed-and-approximately-2-hours-of-less2 {
+  color: #959595;
+  text-align: center;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  position: absolute;
+  left: 680px;
+  top: 1144px;
+  width: 369px;
+  height: 21px;
+}
+.nike-digital-gift-card3 {
+  color: #000000;
+  text-align: center;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  position: absolute;
+  left: 1273px;
+  top: 1117px;
+  width: 182px;
+  height: 21px;
+}
+.emailed-and-approximately-2-hours-of-less3 {
+  color: #959595;
+  text-align: center;
+  font-family: "Alexandria-Regular", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  position: absolute;
+  left: 1273px;
+  top: 1144px;
+  width: 369px;
+  height: 21px;
+}
+.card_generator {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 50px;
+  width: 100%;
+  top: 680px;
+  min-height: 500px;
+  position: relative;
+}
+.card {
+  position: relative;
+  background: #ffffffee;
+  border: 1px solid #d6d6d6;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+  min-height: 500px;
+}
+.main_frame {
+  position: fixed;
+  top: 700px;
+}

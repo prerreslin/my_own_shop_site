@@ -10,17 +10,30 @@
     {% include '__navbar.html' %}
     <div class="frame-22">
       <div class="rectangle-16"></div>
-      <div class="rectangle-34"></div>
       <div class="name">{{ clothing.name }}</div>
+
+      {% if clothing.gender %}
       <div class="gender">{{ clothing.gender }} {{ clothing.type_of_clothes }}</div>
+      {% else %}
+      <div class="gender">{{ clothing.description }}</div>
+      {% endif %}
+      
       <div class="price">${{ clothing.price }}</div>
       {% if clothing.variable %}
         <img class="image-37" src="../static/photos/uploads/{{ clothing.id }}/{{ clothing.variable }}" />
       {% endif %}
-      <div class="select-size">Select Size</div>
+
+      {% if clothing.gender %}
+        <div class="select-size">Select Size:</div>
+      {% else %}
+        <div class="select-size">Choose a delivery method:</div>
+      {% endif %}
+
       <div class="rectangle-32"></div>
-      <div class="rectangle-33"></div>
       <div class="add-to-bag">Add to Bag</div>
+      
+      {% if clothing.gender %}
+      <div class="rectangle-33"></div>
       {% if favourite=="true" %}
         <div class="favorite">Favorited</div>
         <img class="true" src="../static/photos/true.png" />
@@ -28,7 +41,14 @@
         <div class="favorite" onclick="window.location.href='{{ url_for('cloth_info') }}?id={{ clothing.id }}&favourite=true';">Favorite</div>
         <img class="heart2" src="../static/photos/Heart.png" />
       {% endif %}
-      <div class="description">{{ clothing.description }}</div>
+      {% endif %}
+
+      {% if clothing.gender %}
+        <div class="description">{{ clothing.description }}</div>
+      {% else %}
+        <div class="description">{{ clothing.description2 }}</div>
+      {% endif %}
+
       {% if clothing.styles %}
         <div class="style">
           <ul class="style-span">
@@ -49,128 +69,84 @@
         </ul>
       </div>
       {% endif %}
-      <div class="resources-gift-cards-find-a-store-membership-nike-journal-site-feedback">
-        <span>
-          <span class="resources-gift-cards-find-a-store-membership-nike-journal-site-feedback-span">
-            Resources<br /><br /><br />
-          </span>
-          <span class="resources-gift-cards-find-a-store-membership-nike-journal-site-feedback-span2">
-            Gift Cards<br />
-            Find a Store<br />
-            Membership<br />
-            Nike Journal<br />
-            Site Feedback
-          </span>
-        </span>
-      </div>
-      <div class="company-about-nike-news-careers-investors-purpose-sustainability">
-        <span>
-          <span class="company-about-nike-news-careers-investors-purpose-sustainability-span">
-            Company<br /><br /><br />
-          </span>
-          <span class="company-about-nike-news-careers-investors-purpose-sustainability-span2">
-            About Nike<br />
-            News<br />
-            Careers<br />
-            Investors<br />
-            Purpose<br />
-            Sustainability
-          </span>
-        </span>
-      </div>
-      <div class="promotions-discounts-student-military-teacher-first-responders-medical-professionals-birthday">
-        <span>
-          <span class="promotions-discounts-student-military-teacher-first-responders-medical-professionals-birthday-span">
-            Promotions &amp; Discounts<br /><br /><br />
-          </span>
-          <span class="promotions-discounts-student-military-teacher-first-responders-medical-professionals-birthday-span2">
-            Student<br />
-            Military<br />
-            Teacher<br />
-            First Responders &amp; Medical Professionals<br />
-            Birthday
-          </span>
-        </span>
-      </div>
-      <div class="united-states">
-        <span>
-          <span class="united-states-span">
-            <br />
-          </span>
-          <span class="united-states-span2">United States</span>
-        </span>
-      </div>
-      <div class="help-get-help-order-status-shipping-and-delivery-returns-order-cancellation-payment-options-gift-card-balance-contact-us">
-        <span>
-          <span class="help-get-help-order-status-shipping-and-delivery-returns-order-cancellation-payment-options-gift-card-balance-contact-us-span">
-            Help<br /><br /><br />
-          </span>
-          <span class="help-get-help-order-status-shipping-and-delivery-returns-order-cancellation-payment-options-gift-card-balance-contact-us-span2">
-            Get Help<br />
-            Order Status<br />
-            Shipping and Delivery<br />
-            Returns<br />
-            Order Cancellation<br />
-            Payment Options<br />
-            Gift Card Balance<br />
-            Contact Us
-          </span>
-        </span>
-      </div>
-      <div class="size-36">
-        <div class="rectangle-31"></div>
-        <div class="eu-36">EU/36</div>
-      </div>
-      <div class="size-40">
-        <div class="rectangle-312"></div>
-        <div class="eu-40">EU/40</div>
-      </div>
-      <div class="size-42">
-        <div class="rectangle-313"></div>
-        <div class="eu-42">EU/42</div>
-      </div>
-      <div class="size-39">
-        <div class="rectangle-314"></div>
-        <div class="eu-39">EU/39</div>
-      </div>
-      <div class="size-37">
-        <div class="rectangle-315"></div>
-        <div class="eu-37">EU/37</div>
-      </div>
-      <div class="size-38">
-        <div class="rectangle-316"></div>
-        <div class="eu-38">EU/38</div>
-      </div>
-      <div class="size-41">
-        <div class="rectangle-317"></div>
-        <div class="eu-41">EU/41</div>
-      </div>
-      <div class="size-43">
-        <div class="rectangle-318"></div>
-        <div class="eu-43">EU/43</div>
-      </div>
-      <div class="size-44">
-        <div class="rectangle-319"></div>
-        <div class="eu-44">EU/44</div>
-      </div>
+
+      {% if clothing.gender %}
+        <div class="size-36">
+          <div class="rectangle-31"></div>
+          <div class="eu-36">EU/36</div>
+        </div>
+        <div class="size-40">
+          <div class="rectangle-312"></div>
+          <div class="eu-40">EU/40</div>
+        </div>
+        <div class="size-42">
+          <div class="rectangle-313"></div>
+          <div class="eu-42">EU/42</div>
+        </div>
+        <div class="size-39">
+          <div class="rectangle-314"></div>
+          <div class="eu-39">EU/39</div>
+        </div>
+        <div class="size-37">
+          <div class="rectangle-315"></div>
+          <div class="eu-37">EU/37</div>
+        </div>
+        <div class="size-38">
+          <div class="rectangle-316"></div>
+          <div class="eu-38">EU/38</div>
+        </div>
+        <div class="size-41">
+          <div class="rectangle-317"></div>
+          <div class="eu-41">EU/41</div>
+        </div>
+        <div class="size-43">
+          <div class="rectangle-318"></div>
+          <div class="eu-43">EU/43</div>
+        </div>
+        <div class="size-44">
+          <div class="rectangle-319"></div>
+          <div class="eu-44">EU/44</div>
+        </div>
+      {% else %}
+        <div class="size-36">
+          <div class="rectangle-31"></div>
+          <div class="eu-36">Mail</div>
+        </div>
+        <div class="size-37">
+          <div class="rectangle-315"></div>
+          <div class="eu-37">Email</div>
+        </div>
+      {% endif %}
+
+      {% if not clothing.gender %}
+      <img class="image-24" src="../static/photos/uploads/gift_cards/{{ clothing.photo }}">
+      {% else %}
       <img class="image-24" src="../static/photos/uploads/{{ clothing.id }}/{{ clothing.photo }}">
-      <div class="images-container">
-        {% for item in clothing.photos %}
-            <img class="image-242" src="../static/photos/uploads/{{ clothing.id }}/{{ item }}" alt="">
-        {% endfor %}
-      </div>
+      {% endif %}
+      {% if clothing.photos %}
+        <div class="images-container">
+          {% for item in clothing.photos %}
+              <img class="image-242" src="../static/photos/uploads/{{ clothing.id }}/{{ item }}" alt="">
+          {% endfor %}
+        </div>
+      {% endif %}
+      {% if not clothing.gender %}
+      <img class="image-243" src="../static/photos/uploads/gift_cards/{{ clothing.photo }}" />
+      {% else %}
       <img class="image-243" src="../static/photos/uploads/{{ clothing.id }}/{{ clothing.photo }}" />
+      {% endif %}
     </div> 
+    {% include '__bottom.html'   %}
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-          const sizeGroups = document.querySelectorAll('.size-36, .size-37, .size-38, .size-39, .size-40, .size-41, .size-42, .size-43, .size-44');
+          const sizeGroups = document.querySelectorAll('.rectangle-31, .rectangle-312, .rectangle-313, .rectangle-314, .rectangle-315, .rectangle-316, .rectangle-317, .rectangle-318, .rectangle-319');
           let selectedSize = null;
           sizeGroups.forEach((group) => {
               group.addEventListener('click', () => {
                   sizeGroups.forEach((g) => g.classList.remove('active'));
                   group.classList.add('active');
                   selectedSize = group.querySelector('div:nth-child(2)').textContent.trim();
-                  console.log('Выбранный размер:', selectedSize);
+                  
               });
           });
       });

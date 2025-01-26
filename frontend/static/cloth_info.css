@@ -18,14 +18,13 @@
   font-family: "Arimo-Bold";
   src: url("../static/fonts/Arimo/static/Arimo-Bold.ttf") format("truetype");
 }
-
 .frame-22,
 .frame-22 * {
   box-sizing: border-box;
 }
 .frame-22 {
   background: #ffffff;
-  height: 2437px;
+  height: 1700px;
   top: 0px;
   position: relative;
   overflow: hidden;
@@ -38,15 +37,6 @@
   top: 129px;
   overflow: visible;
   background-color: #f3f3f3;
-}
-.rectangle-34 {
-  width: 1327px;
-  height: 3px;
-  position: absolute;
-  left: 234px;
-  top: 1672px;
-  overflow: visible;
-  background-color: black;
 }
 .rectangle-29 {
   background: #d9d9d9;
@@ -120,15 +110,16 @@
 }
 .select-size {
   color: #000000;
-  text-align: center;
+  text-align: left;
   font-family: "ABeeZee-Regular", sans-serif;
   font-size: 24px;
   font-weight: 400;
   position: absolute;
-  left: 1194px;
+  left: 1200px;
   top: 610px;
-  width: 133px;
+  width: 400px;
   height: 32px;
+  line-height: 1;
 }
 .group-52 {
   position: absolute;
@@ -137,10 +128,10 @@
 .rectangle-32 {
   background: #000000;
   border-radius: 121px;
-  width: 360px;
+  width: 518px;
   height: 74px;
   position: absolute;
-  left: 1194px;
+  left: 1203px;
   top: 1106px;
 }
 .add-to-bag {
@@ -150,10 +141,10 @@
   font-size: 24px;
   font-weight: 600;
   position: absolute;
-  left: 1315px;
-  top: 1119px;
-  width: 119px;
+  top: 1125px;
   height: 29px;
+  left: 1365.79px;
+  width: 195.77px;
 }
 .group-53 {
   position: absolute;
@@ -179,7 +170,7 @@
   font-weight: 600;
   position: absolute;
   left: 1318px;
-  top: 1231px;
+  top: 1237px;
   width: 93px;
   height: 29px;
 }
@@ -188,7 +179,7 @@
   height: 25px;
   position: absolute;
   left: 1411px;
-  top: 1235px;
+  top: 1240px;
   object-fit: cover;
 }
 .true {
@@ -196,7 +187,7 @@
   height: 25px;
   position: absolute;
   left: 1425px;
-  top: 1235px;
+  top: 1240px;
   object-fit: cover;
 }
 .description {
@@ -210,6 +201,7 @@
   top: 1358px;
   width: 288px;
   height: 207px;
+  z-index: 1000;
 }
 .style {
   color: #000000;
@@ -222,6 +214,7 @@
   top: 1603px;
   width: 40%;
   height: 23px;
+  z-index: 1000;
 }
 .model {
   color: #000000;
@@ -234,6 +227,7 @@
   top: 1633px;
   width: 40%;
   height: 23px;
+  z-index: 1000;
 }
 .resources-gift-cards-find-a-store-membership-nike-journal-site-feedback {
   text-align: left;
@@ -389,7 +383,7 @@
   font-weight: 400;
   position: absolute;
   left: 1278.4px;
-  top: 765.84px;
+  top: 760px;
   width: 97.88px;
   height: 13.84px;
 }
@@ -418,7 +412,7 @@
   font-weight: 400;
   position: absolute;
   left: 1278.4px;
-  top: 913.84px;
+  top: 907px;
   width: 97.88px;
   height: 13.84px;
 }
@@ -447,7 +441,7 @@
   font-weight: 400;
   position: absolute;
   left: 1278.4px;
-  top: 987.84px;
+  top: 981px;
   width: 97.88px;
   height: 13.84px;
 }
@@ -465,7 +459,7 @@
   width: 250px;
   height: 41.53px;
   position: absolute;
-  left: 1449px;
+  left: 1470px;
   top: 826px;
 }
 .eu-39 {
@@ -475,8 +469,8 @@
   font-size: 20px;
   font-weight: 400;
   position: absolute;
-  left: 1524.4px;
-  top: 839.84px;
+  left: 1541.4px;
+  top: 834px;
   width: 97.88px;
   height: 13.84px;
 }
@@ -494,7 +488,7 @@
   width: 250px;
   height: 41.53px;
   position: absolute;
-  left: 1453px;
+  left: 1470px;
   top: 752px;
 }
 .eu-37 {
@@ -504,8 +498,8 @@
   font-size: 20px;
   font-weight: 400;
   position: absolute;
-  left: 1528.4px;
-  top: 765.84px;
+  left: 1541.4px;
+  top: 760px;
   width: 97.88px;
   height: 13.84px;
 }
@@ -534,7 +528,7 @@
   font-weight: 400;
   position: absolute;
   left: 1278.1px;
-  top: 839.84px;
+  top: 834px;
   width: 97.49px;
   height: 13.84px;
 }
@@ -552,7 +546,7 @@
   width: 250px;
   height: 41.53px;
   position: absolute;
-  left: 1453px;
+  left: 1470px;
   top: 900px;
 }
 .eu-41 {
@@ -562,8 +556,8 @@
   font-size: 20px;
   font-weight: 400;
   position: absolute;
-  left: 1528.4px;
-  top: 913.84px;
+  left: 1541.4px;
+  top: 907px;
   width: 97.88px;
   height: 13.84px;
 }
@@ -581,7 +575,7 @@
   width: 250px;
   height: 41.53px;
   position: absolute;
-  left: 1452px;
+  left: 1470px;
   top: 974px;
 }
 .eu-43 {
@@ -591,8 +585,8 @@
   font-size: 20px;
   font-weight: 400;
   position: absolute;
-  left: 1527.4px;
-  top: 987.84px;
+  left: 1541.4px;
+  top: 981px;
   width: 97.88px;
   height: 13.84px;
 }
@@ -607,10 +601,10 @@
   border-style: solid;
   border-color: #000000;
   border-width: 0.5px;
-  width: 500px;
+  width: 518px;
   height: 41.53px;
   position: absolute;
-  left: 1202px;
+  left: 1203px;
   top: 1037px;
 }
 .eu-44 {
@@ -620,8 +614,8 @@
   font-size: 20px;
   font-weight: 400;
   position: absolute;
-  left: 1352.79px;
-  top: 1050.84px;
+  left: 1365.79px;
+  top: 1045px;
   width: 195.77px;
   height: 13.84px;
 }

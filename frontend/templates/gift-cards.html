@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/gift_cards.css">
+</head>
+<body>
+    {% include '__navbar.html'   %}
+    <div class="frame-24">
+        <div class="nike-gift-cards">Nike Gift Cards</div>
+        <div class="mail-a-gift-card">Mail a Gift Card</div>
+        <div class="email-a-gift-card">Email a Gift Card</div>
+        <div class="check-your-balance">Check your Balance</div>
+        <div class="rectangle-55"></div>
+        <img class="image-43" src="../static/photos/image 43.png" />
+        <div class="give-a-nike-gift-card">GIVE A NIKE GIFT CARD</div>
+        <div class="always-the-perfect-fit">Always the perfect fit</div>
+        <div class="rectangle-56"></div>
+        <div class="mail-a-gift-card2">Mail a Gift Card</div>
+        <div class="rectangle-562"></div>
+        <div class="card_generator">
+            {% if cards %}
+                {% for gift in cards %}
+                    <div class="card" onclick="window.location.href='{{ url_for('cloth_info') }}?gift={{ gift.id }}';">
+                        <img class="image-44" src="../static/photos/uploads/gift_cards/{{ gift.photo }}" />
+                        <div class="nike-digital-gift-card">{{ gift.name }}</div>
+                        <div class="emailed-and-approximately-2-hours-of-less">
+                            {{ gift.description }}
+                        </div>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+        <div class="email-a-gift-card2">Email a Gift Card</div>
+        {% include '__bottom.html'   %}
+    </div>
+</body>
+</html>
