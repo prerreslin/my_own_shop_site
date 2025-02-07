@@ -1,31 +1,31 @@
 @font-face {
-    font-family: "Nats-Regular";
-    src: url("../static/fonts/nats/NATS-Regular.ttf");
+  font-family: "Nats-Regular";
+  src: url("../static/fonts/nats/NATS-Regular.ttf");
 }
 @font-face {
-    font-family: "Alexandria-ExtraBold";
-    src: url("../static/fonts/Alexandria/static/Alexandria-ExtraBold.ttf");
+  font-family: "Alexandria-ExtraBold";
+  src: url("../static/fonts/Alexandria/static/Alexandria-ExtraBold.ttf");
 }
 @font-face {
-    font-family: "AlfaSlabOne-Regular";
-    src: url("../static/fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf");
+  font-family: "AlfaSlabOne-Regular";
+  src: url("../static/fonts/Alfa_Slab_One/AlfaSlabOne-Regular.ttf");
 }
 @font-face {
-    font-family: "Alexandria-Black";
-    src: url("../static/fonts/Alexandria/static/Alexandria-Black.ttf");
+  font-family: "Alexandria-Black";
+  src: url("../static/fonts/Alexandria/static/Alexandria-Black.ttf");
 }
 @font-face {
-    font-family: "Alexandria-Bold";
-    src: url("../static/fonts/Alexandria/static/Alexandria-Bold.ttf");
+  font-family: "Alexandria-Bold";
+  src: url("../static/fonts/Alexandria/static/Alexandria-Bold.ttf");
 }
 @font-face {
-    font-family: "Inter";
-    src: url("../static/fonts/Inter/static/Inter_18pt-BlackItalic.ttf");
+  font-family: "Inter";
+  src: url("../static/fonts/Inter/static/Inter_18pt-BlackItalic.ttf");
 }
 body {
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
 }
 .frame-9,
 .frame-9 * {
@@ -45,6 +45,10 @@ position: absolute;
 left: -6px;
 top: 6px;
 overflow: visible;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .group-8 {
 position: absolute;
@@ -58,6 +62,10 @@ position: absolute;
 left: 313px;
 top: 207px;
 object-fit: cover;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .nike-sb-dunk-travis-scott {
 color: #000000;
@@ -70,24 +78,40 @@ left: 696px;
 top: 947px;
 width: 541px;
 height: 83px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .nike-sb-dunk-travis-scott-span {
 color: #000000;
 font-family: "Nats-Regular", sans-serif;
 font-size: 32px;
 font-weight: 400;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .nike-sb-dunk-travis-scott-span2 {
 color: #000000;
 font-family: "Alexandria-ExtraBold", sans-serif;
 font-size: 32px;
 font-weight: 800;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .nike-sb-dunk-travis-scott-span3 {
 color: #000000;
 font-family: "Nats-Regular", sans-serif;
 font-size: 32px;
 font-weight: 400;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .just-in {
 color: #000000;
@@ -100,6 +124,10 @@ left: 873px;
 top: 3431px;
 width: 181px;
 height: 68px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .form-meets-functions-with-the-weatherized-vomero-roam-an-all-season-staple-that-delivers-a-comfortable-stride-and-keeps-you-ready-for-whatever-no-matter-the-weather {
 color: #000000;
@@ -112,6 +140,10 @@ left: 126px;
 top: 3722px;
 width: 1668px;
 height: 192px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .legend-never-get-old {
 color: #000000;
@@ -124,6 +156,10 @@ left: 713px;
 top: 1062px;
 width: 506px;
 height: 392px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .the-stories-are-true-the-icon-gets-its-first-release-in-a-decade {
 color: #000000;
@@ -136,6 +172,10 @@ left: 194px;
 top: 3164px;
 width: 1548px;
 height: 94px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .vomero-roam {
 color: #000000;
@@ -148,6 +188,10 @@ left: 560px;
 top: 3553px;
 width: 801px;
 height: 115px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .shop-by-classics {
 color: #000000;
@@ -160,6 +204,10 @@ left: 37px;
 top: 4984px;
 width: 322px;
 height: 74px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .rectangle-10 {
 background: #000000;
@@ -178,6 +226,10 @@ top: 5214px;
 transform-origin: 0 0;
 transform: rotate(-35.835deg) scale(1.074, 0.92);
 object-fit: cover;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .blazer {
 color: #ffffff;
@@ -190,6 +242,10 @@ left: 191px;
 top: 5434px;
 width: 82px;
 height: 51px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .unsplash-6-ha-ngmw-vn-mc {
 width: 968px;
@@ -198,6 +254,10 @@ position: absolute;
 left: -3px;
 top: 1727px;
 object-fit: cover;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .unsplash-ebx-bl-iiey-6-g {
 width: 955px;
@@ -206,6 +266,10 @@ position: absolute;
 left: 965px;
 top: 1727px;
 object-fit: cover;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .unsplash-nifvl-r-h-rog {
 width: 968px;
@@ -214,6 +278,10 @@ position: absolute;
 left: -3px;
 top: 2336px;
 object-fit: cover;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .unsplash-g-sw-m-qz-hue-xk {
 width: 955px;
@@ -222,6 +290,10 @@ position: absolute;
 left: 965px;
 top: 2336px;
 object-fit: cover;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .rectangle-12 {
 background: #000000;
@@ -240,232 +312,288 @@ left: 189px;
 top: 3289px;
 }
 .navbar {
-    margin-top: 30px;
-    background-color: transparent;
+  margin-top: 30px;
+  background-color: transparent;
 }
 .nav-item {
-    display: flex-end;
-    align-items: flex-end;
+  display: flex-end;
+  align-items: flex-end;
 }
 .custom-navbar {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 .group-51 {
-    height: 782px;
-    top: 2100px;
-    position: relative;
+  height: 782px;
+  top: 2100px;
+  position: relative;
 }
 .always-iconic {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Alexandria-Black", sans-serif;
-  font-size: 24px;
-  font-weight: 900;
-  position: absolute;
-  left: 14px;
-  top: 0px;
-  width: 186px;
-  height: 53px;
+color: #ffffff;
+text-align: center;
+font-family: "Alexandria-Black", sans-serif;
+font-size: 24px;
+font-weight: 900;
+position: absolute;
+left: 14px;
+top: 0px;
+width: 186px;
+height: 53px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .buy-it-first {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Alexandria-Black", sans-serif;
-  font-size: 24px;
-  font-weight: 900;
-  position: absolute;
-  left: 19px;
-  top: 633px;
-  width: 177px;
-  height: 37px;
+color: #ffffff;
+text-align: center;
+font-family: "Alexandria-Black", sans-serif;
+font-size: 24px;
+font-weight: 900;
+position: absolute;
+left: 19px;
+top: 633px;
+width: 177px;
+height: 37px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .run-in-the-dark {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Alexandria-Black", sans-serif;
-  font-size: 24px;
-  font-weight: 900;
-  position: absolute;
-  left: 991px;
-  top: 0px;
-  width: 216px;
-  height: 43px;
+color: #ffffff;
+text-align: center;
+font-family: "Alexandria-Black", sans-serif;
+font-size: 24px;
+font-weight: 900;
+position: absolute;
+left: 991px;
+top: 0px;
+width: 216px;
+height: 43px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .run-faster {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Alexandria-Black", sans-serif;
-  font-size: 24px;
-  font-weight: 900;
-  position: absolute;
-  left: 994px;
-  top: 651px;
-  width: 177px;
-  height: 28px;
+color: #ffffff;
+text-align: center;
+font-family: "Alexandria-Black", sans-serif;
+font-size: 24px;
+font-weight: 900;
+position: absolute;
+left: 994px;
+top: 651px;
+width: 177px;
+height: 28px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .nike-dunk-retro {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Alexandria-SemiBold", sans-serif;
-  font-size: 32px;
-  font-weight: 600;
-  position: absolute;
-  left: 0px;
-  top: 48px;
-  width: 291px;
-  height: 53px;
+color: #ffffff;
+text-align: center;
+font-family: "Alexandria-SemiBold", sans-serif;
+font-size: 32px;
+font-weight: 600;
+position: absolute;
+left: 0px;
+top: 48px;
+width: 291px;
+height: 53px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .nike-air-jordan-1 {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Alexandria-SemiBold", sans-serif;
-  font-size: 32px;
-  font-weight: 600;
-  position: absolute;
-  left: 5px;
-  top: 670px;
-  width: 299px;
-  height: 57px;
+color: #ffffff;
+text-align: center;
+font-family: "Alexandria-SemiBold", sans-serif;
+font-size: 32px;
+font-weight: 600;
+position: absolute;
+left: 5px;
+top: 670px;
+width: 299px;
+height: 57px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .nike-dunk-x-travis-scott {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Alexandria-SemiBold", sans-serif;
-  font-size: 32px;
-  font-weight: 600;
-  position: absolute;
-  left: 977px;
-  top: 48px;
-  width: 395px;
-  height: 48px;
+color: #ffffff;
+text-align: center;
+font-family: "Alexandria-SemiBold", sans-serif;
+font-size: 32px;
+font-weight: 600;
+position: absolute;
+left: 977px;
+top: 48px;
+width: 395px;
+height: 48px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .nike-air-max-plus {
-  color: #ffffff;
-  text-align: center;
-  font-family: "Alexandria-SemiBold", sans-serif;
-  font-size: 32px;
-  font-weight: 600;
-  position: absolute;
-  left: 994px;
-  top: 689px;
-  width: 294px;
-  height: 38px;
+color: #ffffff;
+text-align: center;
+font-family: "Alexandria-SemiBold", sans-serif;
+font-size: 32px;
+font-weight: 600;
+position: absolute;
+left: 994px;
+top: 689px;
+width: 294px;
+height: 38px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .group-18 {
-  width: 68px;
-  height: 34px;
-  position: static;
-  cursor: pointer;
+width: 68px;
+height: 34px;
+position: static;
+cursor: pointer;
 }
 .rectangle-9 {
-  background: #ffffff;
-  border-radius: 271px;
-  width: 68px;
-  height: 34px;
-  position: absolute;
-  left: 73px;
-  top: 137px;
+background: #ffffff;
+border-radius: 271px;
+width: 68px;
+height: 34px;
+position: absolute;
+left: 73px;
+top: 137px;
 }
 .shop {
-  color: #000000;
-  text-align: center;
-  font-family: "Alexandria-Regular", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  position: absolute;
-  left: 76px;
-  top: 145px;
-  width: 63px;
-  height: 19px;
+color: #000000;
+text-align: center;
+font-family: "Alexandria-Regular", sans-serif;
+font-size: 14px;
+font-weight: 400;
+position: absolute;
+left: 76px;
+top: 145px;
+width: 63px;
+height: 19px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .group-25 {
-  width: 68px;
-  height: 34px;
-  position: static;
-  cursor: pointer;
+width: 68px;
+height: 34px;
+position: static;
+cursor: pointer;
 }
 .rectangle-92 {
-  background: #ffffff;
-  border-radius: 271px;
-  width: 68px;
-  height: 34px;
-  position: absolute;
-  left: 73px;
-  top: 748px;
+background: #ffffff;
+border-radius: 271px;
+width: 68px;
+height: 34px;
+position: absolute;
+left: 73px;
+top: 748px;
 }
 .shop2 {
-  color: #000000;
-  text-align: center;
-  font-family: "Alexandria-Regular", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  position: absolute;
-  left: 76px;
-  top: 756px;
-  width: 63px;
-  height: 19px;
+color: #000000;
+text-align: center;
+font-family: "Alexandria-Regular", sans-serif;
+font-size: 14px;
+font-weight: 400;
+position: absolute;
+left: 76px;
+top: 756px;
+width: 63px;
+height: 19px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .group-24 {
-  width: 68px;
-  height: 37px;
-  position: static;
-  cursor: pointer;
+width: 68px;
+height: 37px;
+position: static;
+cursor: pointer;
 }
 .rectangle-93 {
-  background: #ffffff;
-  border-radius: 271px;
-  width: 68px;
-  height: 34px;
-  position: absolute;
-  left: 1048px;
-  top: 137px;
+background: #ffffff;
+border-radius: 271px;
+width: 68px;
+height: 34px;
+position: absolute;
+left: 1048px;
+top: 137px;
 }
 .shop3 {
-  color: #000000;
-  text-align: center;
-  font-family: "Alexandria-Regular", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  position: absolute;
-  left: 1051px;
-  top: 144px;
-  width: 63px;
-  height: 30px;
+color: #000000;
+text-align: center;
+font-family: "Alexandria-Regular", sans-serif;
+font-size: 14px;
+font-weight: 400;
+position: absolute;
+left: 1051px;
+top: 144px;
+width: 63px;
+height: 30px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .group-19 {
-  width: 68px;
-  height: 34px;
-  position: static;
-  cursor: pointer;
+width: 68px;
+height: 34px;
+position: static;
+cursor: pointer;
 }
 .unsplash-fz-92-ybo-3-n-0-m {
-  border-radius: 53px;
-  width: 1317px;
-  height: 831px;
-  position: absolute;
-  left: 302px;
-  top: 4029px;
-  object-fit: cover;
+border-radius: 53px;
+width: 1317px;
+height: 831px;
+position: absolute;
+left: 302px;
+top: 4029px;
+object-fit: cover;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 
 .rectangle-94 {
-  background: #ffffff;
-  border-radius: 271px;
-  width: 68px;
-  height: 34px;
-  position: absolute;
-  left: 1048px;
-  top: 748px;
+background: #ffffff;
+border-radius: 271px;
+width: 68px;
+height: 34px;
+position: absolute;
+left: 1048px;
+top: 748px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .shop4 {
-  color: #000000;
-  text-align: center;
-  font-family: "Alexandria-Regular", sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  position: absolute;
-  left: 1051px;
-  top: 756px;
-  width: 63px;
-  height: 19px;
+color: #000000;
+text-align: center;
+font-family: "Alexandria-Regular", sans-serif;
+font-size: 14px;
+font-weight: 400;
+position: absolute;
+left: 1051px;
+top: 756px;
+width: 63px;
+height: 19px;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }

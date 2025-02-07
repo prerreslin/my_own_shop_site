@@ -45,8 +45,8 @@ class SizeEnum(str, Enum):
 class ShopModel(BaseModel):
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
-    name: str = Field(..., max_length=100, description="Name of the clothes")
-    gender: GenderEnum = Field(None, max_length=1000, description="Gender of the clothes")
+    name: str = Field(..., max_length=48, description="Name of the clothes")
+    gender: GenderEnum = Field(None, description="Gender of the clothes")
     type_of_clothes: ChoiceTypeEnum = Field(..., description="Type of the clothes")
     name_of_clothes: ChoiceNameEnum = Field(..., description="Name of the clothes")
     discount: DiscountEnum = Field(None, max_length=100, description="Discount of the clothes")
@@ -57,9 +57,9 @@ class ShopModel(BaseModel):
     photo_hover: Annotated[UploadFile, File(...)]
     add_photos: List[UploadFile] = None
     variable: Optional[Annotated[UploadFile, File(None)]] = None
-    description: Optional[str] = Field(..., max_length=350, description="Description of clothes")
-    styles: Optional[str] = Field(None)
-    model: str = None
+    description: Optional[str] = Field(..., max_length=1000, description="Description of clothes")
+    styles: Optional[str] = Field(default="Style:")
+    model: str = Field(default="Model:")
     
     @field_validator("created_at")
     @classmethod

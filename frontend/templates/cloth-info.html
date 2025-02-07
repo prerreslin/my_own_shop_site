@@ -33,7 +33,7 @@
       <div class="add-to-bag">Add to Bag</div>
       
       {% if clothing.gender %}
-      <div class="rectangle-33"></div>
+      <div class="rectangle-33" onclick="window.location.href='{{ url_for('cloth_info') }}?id={{ clothing.id }}&favourite=true';"></div>
       {% if favourite=="true" %}
         <div class="favorite">Favorited</div>
         <img class="true" src="../static/photos/true.png" />
@@ -71,42 +71,105 @@
       {% endif %}
 
       {% if clothing.gender %}
+        {% if "36" in clothing.sizes %}
         <div class="size-36">
           <div class="rectangle-31"></div>
           <div class="eu-36">EU/36</div>
         </div>
-        <div class="size-40">
-          <div class="rectangle-312"></div>
-          <div class="eu-40">EU/40</div>
+        {% else %}
+        <div class="size-36">
+          <div class="rectangle-31" style="opacity: 0.5;"></div>
+          <div class="eu-36" style="opacity: 0.5;">EU/36</div>
         </div>
-        <div class="size-42">
-          <div class="rectangle-313"></div>
-          <div class="eu-42">EU/42</div>
-        </div>
-        <div class="size-39">
-          <div class="rectangle-314"></div>
-          <div class="eu-39">EU/39</div>
-        </div>
+        {% endif %}
+        {% if "37" in clothing.sizes %}
         <div class="size-37">
           <div class="rectangle-315"></div>
           <div class="eu-37">EU/37</div>
         </div>
+        {% else %}
+        <div class="size-37">
+          <div class="rectangle-315" style="opacity: 0.5;"></div>
+          <div class="eu-37" style="opacity: 0.5;">EU/37</div>
+        </div>
+        {% endif %}
+        {% if "38" in clothing.sizes %}
         <div class="size-38">
           <div class="rectangle-316"></div>
           <div class="eu-38">EU/38</div>
         </div>
+        {% else %}
+        <div class="size-38">
+          <div class="rectangle-316" style="opacity: 0.5;"></div>
+          <div class="eu-38" style="opacity: 0.5;">EU/38</div>
+        </div>
+        {% endif %}
+        {% if "39" in clothing.sizes %}
+        <div class="size-39">
+          <div class="rectangle-314"></div>
+          <div class="eu-39">EU/39</div>
+        </div>
+        {% else %}
+        <div class="size-39">
+          <div class="rectangle-314" style="opacity: 0.5;"></div>
+          <div class="eu-39" style="opacity: 0.5;">EU/39</div>
+        </div>
+        {% endif %}
+        {% if "40" in clothing.sizes %}
+        <div class="size-40">
+          <div class="rectangle-312"></div>
+          <div class="eu-40">EU/40</div>
+        </div>
+        {% else %}
+        <div class="size-40">
+          <div class="rectangle-312" style="opacity: 0.5;"></div>
+          <div class="eu-40" style="opacity: 0.5;">EU/40</div>
+        </div>
+        {% endif %}
+        {% if "41" in clothing.sizes %}
         <div class="size-41">
           <div class="rectangle-317"></div>
           <div class="eu-41">EU/41</div>
         </div>
+        {% else %}
+        <div class="size-41">
+          <div class="rectangle-317" style="opacity: 0.5;"></div>
+          <div class="eu-41" style="opacity: 0.5;">EU/41</div>
+        </div>
+        {% endif %}
+        {% if "42" in clothing.sizes %}
+        <div class="size-42">
+          <div class="rectangle-313"></div>
+          <div class="eu-42">EU/42</div>
+        </div>
+        {% else %}
+        <div class="size-42">
+          <div class="rectangle-313" style="opacity: 0.5;"></div>
+          <div class="eu-42" style="opacity: 0.5;">EU/42</div>
+        </div>
+        {% endif %}
+        {% if "43" in clothing.sizes %}
         <div class="size-43">
           <div class="rectangle-318"></div>
           <div class="eu-43">EU/43</div>
         </div>
+        {% else %}
+        <div class="size-43">
+          <div class="rectangle-318" style="opacity: 0.5;"></div>
+          <div class="eu-43" style="opacity: 0.5;">EU/43</div>
+        </div>
+        {% endif %}
+        {% if "44" in clothing.sizes %}
         <div class="size-44">
           <div class="rectangle-319"></div>
           <div class="eu-44">EU/44</div>
         </div>
+        {% else %}
+        <div class="size-44">
+          <div class="rectangle-319" style="opacity: 0.5;"></div>
+          <div class="eu-44" style="opacity: 0.5;">EU/44</div>
+        </div>
+        {% endif %}
       {% else %}
         <div class="size-36">
           <div class="rectangle-31"></div>
@@ -139,17 +202,53 @@
     {% include '__bottom.html'   %}
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-          const sizeGroups = document.querySelectorAll('.rectangle-31, .rectangle-312, .rectangle-313, .rectangle-314, .rectangle-315, .rectangle-316, .rectangle-317, .rectangle-318, .rectangle-319');
-          let selectedSize = null;
-          sizeGroups.forEach((group) => {
-              group.addEventListener('click', () => {
-                  sizeGroups.forEach((g) => g.classList.remove('active'));
-                  group.classList.add('active');
-                  selectedSize = group.querySelector('div:nth-child(2)').textContent.trim();
-                  
-              });
-          });
+          {% if clothing.sizes is not none %}
+              const sizes = {{ clothing.sizes | tojson }};
+              
+              if (sizes && sizes.length > 0) {
+                  const list_ofquery = [];
+                  if (sizes.includes("36")) {
+                      list_ofquery.push('.rectangle-31');
+                  }
+                  if (sizes.includes("37")) {
+                      list_ofquery.push('.rectangle-315');
+                  }
+                  if (sizes.includes("38")) {
+                      list_ofquery.push('.rectangle-316');
+                  }
+                  if (sizes.includes("39")) {
+                      list_ofquery.push('.rectangle-314');
+                  }
+                  if (sizes.includes("40")) {
+                      list_ofquery.push('.rectangle-312');
+                  }
+                  if (sizes.includes("41")) {
+                      list_ofquery.push('.rectangle-317');
+                  }
+                  if (sizes.includes("42")) {
+                      list_ofquery.push('.rectangle-313');
+                  }
+                  if (sizes.includes("43")) {
+                      list_ofquery.push('.rectangle-318');
+                  }
+                  if (sizes.includes("44")) {
+                      list_ofquery.push('.rectangle-319');
+                  }
+  
+                  const selectors = list_ofquery.join(', ');
+                  const sizeGroups = document.querySelectorAll(selectors);
+                  let selectedSize = null;
+  
+                  sizeGroups.forEach((group) => {
+                      group.addEventListener('click', () => {
+                          sizeGroups.forEach((g) => g.classList.remove('active'));
+                          group.classList.add('active');
+                          selectedSize = group.querySelector('div:nth-child(2)').textContent.trim();
+                      });
+                  });
+              }
+          {% endif %}
       });
-    </script>
+  </script>
 </body>
 </html>

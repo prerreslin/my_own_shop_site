@@ -49,6 +49,10 @@ left: -6px;
 top: 6px;
 overflow: visible;
 z-index: 100;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .new {
 color: #000000;
@@ -63,6 +67,13 @@ width: 81px;
 height: 64px;
 cursor: pointer;
 z-index: 100;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
+}
+.new:hover {
+color:gray;
 }
 .men {
 color: #000000;
@@ -76,6 +87,13 @@ top: 15px;
 width: 63px;
 height: 64px;
 z-index: 100;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
+}
+.men:hover {
+color:gray;
 }
 .women {
 color: #000000;
@@ -89,6 +107,13 @@ top: 15px;
 width: 120px;
 height: 64px;
 z-index: 100;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
+}
+.women:hover {
+color:gray
 }
 .sale {
 color: #000000;
@@ -102,6 +127,13 @@ top: 15px;
 width: 64px;
 height: 62px;
 z-index: 100;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
+}
+.sale:hover {
+color:gray;
 }
 .jordan {
 color: #000000;
@@ -115,6 +147,13 @@ top: 15px;
 width: 105px;
 height: 64px;
 z-index: 100;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
+}
+.jordan:hover {
+color:gray;
 }
 .kids {
 color: #000000;
@@ -128,6 +167,13 @@ top: 15px;
 width: 67px;
 height: 64px;
 z-index: 100;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
+}
+.kids:hover {
+color:gray;
 }
 .nike {
 width: 79px;
@@ -137,6 +183,10 @@ left: 50px;
 top: 0px;
 object-fit: cover;
 z-index: 100;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .help {
 color: #000000;
@@ -145,6 +195,10 @@ font-family: "Nats-Regular", sans-serif;
 font-size: 24px;
 font-weight: 400;
 z-index: 100;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .join-us {
 color: #000000;
@@ -153,6 +207,10 @@ font-family: "Nats-Regular", sans-serif;
 font-size: 24px;
 font-weight: 400;
 z-index: 100;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .sign-in {
 color: #000000;
@@ -162,6 +220,13 @@ font-size: 24px;
 font-weight: 400;
 cursor: pointer;
 z-index: 100;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
+}
+.sign-in:hover {
+    color:gray;
 }
 .user-info {
 color: #000000;
@@ -171,6 +236,13 @@ font-size: 24px;
 font-weight: 400;
 cursor: pointer;
 z-index: 100;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
+}
+.user-info:hover {
+    color:gray;
 }
 .group-8 {
 position: absolute;
@@ -193,6 +265,10 @@ position: absolute;
 left: 1590px;
 top: 123px;
 z-index: 100;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .search {
 width: 24px;
@@ -202,22 +278,30 @@ left: 1600px;
 top: 131px;
 object-fit: cover;
 z-index: 100;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .search2 {
-    color: #a0a0a0;
-    text-align: left;
-    font-family: "Nats-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    position: absolute;
-    left: 1625px;
-    top: 125px;
-    z-index: 100;
-    height: 30px;
-    background-color: transparent;
-    border: none;
-    height: auto;
-    outline: none;
+color: #a0a0a0;
+text-align: left;
+font-family: "Nats-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+position: absolute;
+left: 1625px;
+top: 125px;
+z-index: 100;
+height: 30px;
+background-color: transparent;
+border: none;
+height: auto;
+outline: none;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .dota-fortnite {
 color: #000000;
@@ -234,14 +318,24 @@ width: 242px;
 height: 53px;
 cursor: pointer;
 z-index: 100;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
+}
+.dota-fortnite:hover {
+color:gray;
 }
 .navbar {
 position: fixed;
 margin-top: 25px;
 background-color: transparent;
 z-index: 100;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
-
 .nav-item {
 display: flex;
 align-items: flex-end;
@@ -259,6 +353,10 @@ left: 1817px;
 top: 131px;
 object-fit: cover;
 z-index: 100;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
 .bag {
 width: 26px;
@@ -268,32 +366,41 @@ left: 1850px;
 top: 131px;
 object-fit: cover;
 z-index: 100;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
+}
+.dropdown-container {
+position: relative;
+display: inline-block;
 }
 .dropdown-menu {
-    position: relative;
-    top: 0ц;
-    left: 85%;
-    background-color: #f1f1f1;
-    width: 100px;
-    height: 40px;
-    z-index: 1100;
-    margin-top: 3px; 
-    display: none;
+display: none;
+position: absolute;
+background-color: white;
+border: 1px solid #d6d6d6;
+border-radius: 5px;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+padding: 10px;
+width: 150px;
+z-index: 1000;
 }
-
-.user-info.active + .dropdown-menu {
-    display: block;
+.dropdown-menu.active {
+display: block;
 }
-
-.dropdown-menu a {
-    color: black;
-    text-decoration: none;
-    font-family: "Nats-Regular", sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    z-index: 1100;
-}
-
 .dropdown-menu a:hover {
-    background-color: #ddd;
+color: gray;
+}
+.dropdown-menu a {
+color: black;
+text-decoration: none;
+font-family: "Nats-Regular", sans-serif;
+font-size: 24px;
+font-weight: 400;
+cursor: pointer;
+user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+-moz-user-select: none;
 }
